@@ -1,0 +1,540 @@
+{
+  "common": {
+    "brand": "Bee & Olive",
+    "currency": "EGP",
+    "addToCart": "Add to Cart",
+    "quickView": "Quick View",
+    "readMore": "Read Our Full Story"
+  },
+  "nav": {
+    "home": "Home",
+    "shop": "Shop",
+    "ourStory": "Our Story",
+    "searchPlaceholder": "Search our harvest...",
+    "offers": "Offers",
+    "blog": "Blog"
+  },
+  "footer": {
+    "description": "Dedicated to preserving the heritage of natural Egyptian farming while delivering premium wellness products to a modern world.",
+    "quickLinks": "Quick Links",
+    "sustainability": "Sustainability",
+    "shippingPolicy": "Shipping Policy",
+    "labReports": "Lab Reports",
+    "contactUs": "Contact Us",
+    "ourPromise": "Our Promise",
+    "promiseDesc": "Every jar of honey and bottle of oil is traceable to its source. We ensure fair wages for our farmers and ecological balance for our land.",
+    "copyright": "© 2024 Bee & Olive. Egypt's Finest Natural Harvest."
+  },
+  "home": {
+    "hero": {
+      "btnShop": "Shop Now",
+      "btnProcess": "Our Process",
+      "slides": [
+        {
+          "subtitle": "Finest Crops of Nature in Egypt",
+          "title1": "Golden",
+          "title2": "Nature",
+          "desc": "Discover the pure essence of Egyptian nature. From our farms to your home, we provide natural honey and cold-pressed extra virgin olive oil.",
+          "mainImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuB-dBYTLE950i5ivwp0uoeTmJcnhi7vnC5zaw0Rr7rduDfeHmYjFQlDgbQBFgs1C1sdJFi-4gdx_oEnrefYyzc87XV4InV-3_AdgiBKMV-ARfNyW_YFskKoK_mcPCXtXzb5sdAqkXofCDDJOokDl05hPE2xj8OdtQ0-FDs-l7jwWvyUSFvB5yl_qAeW82j2SIwCEKEX9MmYjI4aFBcqBw4776sjGr2xmPMkSROPjanAPBIW9SXKIx-ZV8p3NactRax9JlU9sOqpS3I",
+          "floatingImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuAUSFyP3qm3XYOBVyi6j-y9aebTDNNYSu8VtPN0dQO64ym0IRHr2DqXLlAnyE8ye_gMLDXyRH8UqosAU7bBVIMbC2MU_-tkyYQ29AxH0PWpGe44AoQyA01P7fuMOSTk7rseXof5bCu4lYcii1YHhzaC-QsC-QHEKPXrHFvLaxkDgdUTpucBA-JhFSmU6TVN7nIkD4seGUQwCEn-jHUFjCsRntPYtThhrtKfBcnN7LLSm8QJa_vEMRmkeZYCHjglAkejXRQJmFQAsTg",
+          "badgeText": "+15k",
+          "badgeSub": "Happy Clients"
+        },
+        {
+          "subtitle": "Cold-pressed Extra Virgin",
+          "title1": "Olive",
+          "title2": "Crystal Oil",
+          "desc": "Carefully handpicked from the best olive trees, we cold-press it to retain all its nutritional value and original flavor that adds magic to your table.",
+          "mainImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuAUSFyP3qm3XYOBVyi6j-y9aebTDNNYSu8VtPN0dQO64ym0IRHr2DqXLlAnyE8ye_gMLDXyRH8UqosAU7bBVIMbC2MU_-tkyYQ29AxH0PWpGe44AoQyA01P7fuMOSTk7rseXof5bCu4lYcii1YHhzaC-QsC-QHEKPXrHFvLaxkDgdUTpucBA-JhFSmU6TVN7nIkD4seGUQwCEn-jHUFjCsRntPYtThhrtKfBcnN7LLSm8QJa_vEMRmkeZYCHjglAkejXRQJmFQAsTg",
+          "floatingImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuAqH-mYp4nHM9V4MbnF1K_P2muhKh3ZPeUi0w9uk1Do7iviy7UzQfpPlk3JhhF6knOstG129a_qPe2FtTmCsEe-4YSkR5QPo2j4De1egDZo1IJdzzjqqlMiVjA_RsQuga2lA7nA3_D8tVL-c25S2cpLvT5BIGOuC_kZyfaxs93hjwg_Q3F8h6Sys2iA_beEcLw8dX_L_7y7miChUVSlvG7kyHAhw8QVzz6AvByew5NWsuv5j9nygLdtRF9dPduQLY85CRt7W6sjpHk",
+          "badgeText": "Low Acidity",
+          "badgeSub": "Global Standard"
+        },
+        {
+          "subtitle": "Premium Bundles & Savings",
+          "title1": "Offers",
+          "title2": "Nahla & Zetona",
+          "desc": "We brought benefits together at the best prices. Get free shipping and amazing bundles when buying natural honey with the best olive oil.",
+          "mainImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuDH-1V6nvnTXR0SsevM8g243tXqbdq3yxifVJ000d_TsyUheVSPt1JBEeSUEjeNdtXwiykYtvPLsmVKBjFVOK_Fxe-Oguv2hVpkUJ4A4le6GoOeLLOSc-6weThcvSQJcjzq8ss450nze4WcIFt9CLISobDA3jB8A22sC3ejvuUSt9Xz0ZfypsINUaKB2bvgWEtTMhZvOnjnRUQM8VzZRsfhup_cqe7a29lXt7ZMFcUJhY3oXO8RyY2Wy2zbMFOQfhVzZpiOhEpJujU",
+          "floatingImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuB0R_9f_iQYp_3zZ4_a_FjG-_Mvy1_wZqf_2K_O1X3",
+          "badgeText": "Save",
+          "badgeSub": "Bundle Packs"
+        }
+      ]
+    },
+    "benefits": {
+      "b1": {
+        "title": "100% Natural",
+        "desc": "Pure, unadulterated products harvested using traditional methods that respect the land."
+      },
+      "b2": {
+        "title": "Organic Certified",
+        "desc": "Our groves and hives follow strict organic protocols to ensure the highest nutritional value."
+      },
+      "b3": {
+        "title": "Fast Delivery",
+        "desc": "From our local farms directly to your doorstep within 48 hours for maximum freshness."
+      }
+    },
+    "featured": {
+      "title1": "Seasonal",
+      "title2": "Selects",
+      "desc": "Our master harvesters have selected these exceptional batches for their depth of flavor and medicinal properties.",
+      "product1": {
+        "badge": "Artisan Badge",
+        "name": "Premium Clover Honey",
+        "desc": "Raw, Unfiltered, High-Enzyme",
+        "price": "450"
+      },
+      "product2": {
+        "badge": "Limited Batch",
+        "name": "Extra Virgin Olive Oil",
+        "desc": "Cold Pressed, Single Estate",
+        "price": "320"
+      }
+    },
+    "teaser": {
+      "subtitle": "The Artisanal Curator",
+      "title1": "Rooted in Egypt’s",
+      "title2": "Ancient Fertile Lands",
+      "p1": "Bee & Olive was born from a passion for the purity of nature. We believe that true wellness comes from the earth, uncompromised by modern processing.",
+      "p2": "Our journey began in the small groves of the Delta and the sun-drenched hills of Sinai, seeking out the most dedicated artisans who treat their harvest as an art form rather than a commodity."
+    },
+    "newsletter": {
+      "title1": "Join Our Harvest",
+      "title2": "Circles",
+      "desc": "Receive exclusive access to seasonal batches, health recipes, and limited-edition harvests.",
+      "placeholder": "Your email address",
+      "btn": "Subscribe",
+      "disclaimer": "We respect your privacy. Unsubscribe anytime."
+    },
+    "bestSellers": {
+      "title": "Best Sellers",
+      "subtitle": "Customer Favorites",
+      "desc": "Discover our most requested products that have earned the trust and satisfaction of our customers.",
+      "products": [
+        {
+          "name": "Mountain Sidr Honey",
+          "desc": "100% pure and carefully selected for health and immunity.",
+          "price": "450",
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCpOiP2kQMQCJH9HjTzZeXw0JcBj_Ye60G4Oiz7e6M6zPk62QwD10oG2ecd-yDxIdZjizLdv7hijSIt-s_ewICus8T9U2RJDNe01LwoPFa14k7Wi3VqpC4a72wlzuylCPawJOEZoo-0BXFqdm1QJ4YgszsNPmsiz7xIUWOCwQO8rxzpi1nlXpgsxU1lwlZsxvsbIDLasMl_qAO24nP9Yu1CFZvBEsD9EgkVGRgRLnqMRz6xkdPXGB5Ts-AbjCpKh4EfeoKdL7K6quk",
+          "badge": "Selling Fast"
+        },
+        {
+          "name": "Black Seed Immunity Blend",
+          "desc": "A unique mix for daily energy and vitality.",
+          "price": "380",
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuAUSFyP3qm3XYOBVyi6j-y9aebTDNNYSu8VtPN0dQO64ym0IRHr2DqXLlAnyE8ye_gMLDXyRH8UqosAU7bBVIMbC2MU_-tkyYQ29AxH0PWpGe44AoQyA01P7fuMOSTk7rseXof5bCu4lYcii1YHhzaC-QsC-QHEKPXrHFvLaxkDgdUTpucBA-JhFSmU6TVN7nIkD4seGUQwCEn-jHUFjCsRntPYtThhrtKfBcnN7LLSm8QJa_vEMRmkeZYCHjglAkejXRQJmFQAsTg",
+          "badge": "Top Rated"
+        },
+        {
+          "name": "Oasis Extra Virgin Olive Oil",
+          "desc": "First cold-pressed to preserve authentic taste.",
+          "price": "290",
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCw7rvCvpuCRO8s3y3nFrxHg-B8TUlr2OWuWibd7McVSWmSDWrkdD9RYlQDTog0DnsCxIADefL7gj2vPmiphtbU5onf49JkBfRyjOTU5tC-MGFr83sdOeJOMBf4-nBhH3OyfjxSIjAkUIF7PklLdUw042d92wLTxrEQ55x-ZRH7yMfI3xN2_5Be2aap3VZbpMPJ5s7O7XM8qulrCNXE_1v47N838U7sLMMEynWU30q2-UqvIZM7oIJbIfZAjD5tY95AsSJDrS2oJmY",
+          "badge": ""
+        }
+      ]
+    },
+    "categories": {
+      "title": "Shop By Category",
+      "subtitle": "Curated for you",
+      "items": [
+        {
+          "name": "Mountain Honey",
+          "desc": "Finest reserves from the peaks",
+          "icon": "landscape",
+          "link": "/shop",
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDH-1V6nvnTXR0SsevM8g243tXqbdq3yxifVJ000d_TsyUheVSPt1JBEeSUEjeNdtXwiykYtvPLsmVKBjFVOK_Fxe-Oguv2hVpkUJ4A4le6GoOeLLOSc-6weThcvSQJcjzq8ss450nze4WcIFt9CLISobDA3jB8A22sC3ejvuUSt9Xz0ZfypsINUaKB2bvgWEtTMhZvOnjnRUQM8VzZRsfhup_cqe7a29lXt7ZMFcUJhY3oXO8RyY2Wy2zbMFOQfhVzZpiOhEpJujU"
+        },
+        {
+          "name": "Floral Honey",
+          "desc": "Pure nectar from farms",
+          "icon": "local_florist",
+          "link": "/shop",
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuB-dBYTLE950i5ivwp0uoeTmJcnhi7vnC5zaw0Rr7rduDfeHmYjFQlDgbQBFgs1C1sdJFi-4gdx_oEnrefYyzc87XV4InV-3_AdgiBKMV-ARfNyW_YFskKoK_mcPCXtXzb5sdAqkXofCDDJOokDl05hPE2xj8OdtQ0-FDs-l7jwWvyUSFvB5yl_qAeW82j2SIwCEKEX9MmYjI4aFBcqBw4776sjGr2xmPMkSROPjanAPBIW9SXKIx-ZV8p3NactRax9JlU9sOqpS3I"
+        },
+        {
+          "name": "Natural Oils",
+          "desc": "Premium first press virgin",
+          "icon": "water_drop",
+          "link": "/shop",
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuAUSFyP3qm3XYOBVyi6j-y9aebTDNNYSu8VtPN0dQO64ym0IRHr2DqXLlAnyE8ye_gMLDXyRH8UqosAU7bBVIMbC2MU_-tkyYQ29AxH0PWpGe44AoQyA01P7fuMOSTk7rseXof5bCu4lYcii1YHhzaC-QsC-QHEKPXrHFvLaxkDgdUTpucBA-JhFSmU6TVN7nIkD4seGUQwCEn-jHUFjCsRntPYtThhrtKfBcnN7LLSm8QJa_vEMRmkeZYCHjglAkejXRQJmFQAsTg"
+        },
+        {
+          "name": "Premium Bundles",
+          "desc": "Value gifts and sets",
+          "icon": "redeem",
+          "link": "/offers",
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuAqH-mYp4nHM9V4MbnF1K_P2muhKh3ZPeUi0w9uk1Do7iviy7UzQfpPlk3JhhF6knOstG129a_qPe2FtTmCsEe-4YSkR5QPo2j4De1egDZo1IJdzzjqqlMiVjA_RsQuga2lA7nA3_D8tVL-c25S2cpLvT5BIGOuC_kZyfaxs93hjwg_Q3F8h6Sys2iA_beEcLw8dX_L_7y7miChUVSlvG7kyHAhw8QVzz6AvByew5NWsuv5j9nygLdtRF9dPduQLY85CRt7W6sjpHk"
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "They Tried, They Returned",
+      "subtitle": "What our clients say",
+      "reviews": [
+        {
+          "name": "Ahmed Saeed",
+          "role": "VIP Customer",
+          "text": "The best honey quality I have ever tried. The premium packaging and Sidr taste are unmatched. Extremely fast delivery.",
+          "rating": 5,
+          "date": "2 days ago"
+        },
+        {
+          "name": "Maram Abdallah",
+          "role": "Chef",
+          "text": "I use Nahla & Zetona olive oil daily. The first press quality is obvious from its aroma!",
+          "rating": 5,
+          "date": "1 week ago"
+        },
+        {
+          "name": "Fahad Al-Nasser",
+          "role": "Loyal Customer",
+          "text": "The family bundles are our favorite, providing excellent value and ensuring health for our kids.",
+          "rating": 4,
+          "date": "1 month ago"
+        }
+      ]
+    },
+    "blog": {
+      "title": "Health & Nature Library",
+      "subtitle": "Tips & Articles",
+      "articles": [
+        {
+          "title": "5 Reasons to Take a Spoon of Honey Daily",
+          "date": "15 Oct 2025",
+          "desc": "Discover the amazing benefits pure honey brings to your immune system and daily energy.",
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuB0R_9f_iQYp_3zZ4_a_FjG-_Mvy1_wZqf_2K_O1X3z3vT_T-_3K3Yv-Z1_wZw3X1_wY_3zZ4_a_FjG-_Mvy1_wZqf_2K_O1X3",
+          "label": "Health"
+        },
+        {
+          "title": "First Press vs. Refined Oils",
+          "date": "02 Nov 2025",
+          "desc": "How do you recognize authentic olive oil? Here is your complete guide to picking the best for your table.",
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAUSFyP3qm3XYOBVyi6j-y9aebTDNNYSu8VtPN0dQO64ym0IRHr2DqXLlAnyE8ye_gMLDXyRH8UqosAU7bBVIMbC2MU_-tkyYQ",
+          "label": "Culture"
+        }
+      ],
+      "btn": "Explore Blog"
+    }
+  },
+  "shop": {
+    "title": "Our Collection",
+    "desc": "Explore our curated selection of premium Egyptian harvests, from the golden nectar of Sidr to the liquid gold of our cold-pressed olive oils.",
+    "showing": "Showing 6 of 36 Products",
+    "categories": [
+      "All Harvests",
+      "Premium Honey",
+      "Artisan Olive Oil",
+      "Botanical Blends"
+    ],
+    "priceRange": "Price Range",
+    "quality": {
+      "title": "Artisan Quality",
+      "desc": "Every jar is a testament to the Egyptian soil. Hand-harvested and lab-verified for purity."
+    },
+    "products": [
+      {
+        "name": "Sidr Honey (Aswan)",
+        "desc": "The rarest nectar from the desert valleys. Rich, medicinal, and deeply floral.",
+        "price": 450,
+        "badge": "Limited Batch",
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDLvSKQSCOQWA_AqoCUWHyCDyEuekbx2Z9gYa3MdvG0OFvQNAU2mMABtYUJ9Rj1pckCr4Ntz_oOvDxk2r6GLZmYUI20me3SFNL6nQyGG2rKXWaSpaQNRBvMjFOxxtG72RsHTVBX2YbtRRZSSFKSLzn192bvjFvj-SsHt5xA7z4hwZP3ROeASdQbE8vUOCEFtJSLsRb7QAnULGxPB9hTzaKeSs0Xsz-J8Dk1mXwahNmEkJW2SR808Cx5eSA0CxonTgRSIaEPt0SwwyE"
+      },
+      {
+        "name": "Cold Pressed Olive Oil",
+        "desc": "First-press, extra virgin oil from the heart of Siwa Oasis. Peppery finish.",
+        "price": 280,
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuAhafBmo0mHxEwstZ0ba0jBgr8bVG4o2hnXRUeW2ZZ2YDiKwU2V1mvGQeBMZrXwqLhh9nD7sSWjHb8B5h6UKSHP5AqBDpySt5sj7e7zdZzKf9fAS5n6DVL8vHQX0TQ7hAKhU80Ww22hrXyEM5NAB4io6GcuMVp40JD1f48UPzUGbbIo6bYZRtQxB33LiDIbjUPSE4NEDZTFClE3zXqoUzObPoJY0YlC8pfnlRxHZZa02GiVXc8hyGpajpMmk1lZ3XpDoTdSzb2YU1w"
+      }
+    ],
+    "banner": {
+      "title": "Subscribe for Fresh Harvest Alerts",
+      "desc": "Join our community and be the first to know when our seasonal limited-batch honeys are released.",
+      "btn": "Join Us",
+      "placeholder": "Your email address"
+    }
+  },
+  "productDetail": {
+    "reviews": "128 Reviews",
+    "size": "Jar Size",
+    "sizes": [
+      "250g",
+      "500g",
+      "1kg"
+    ],
+    "badges": [
+      "100% Organic",
+      "Lab Tested",
+      "Free Shipping"
+    ],
+    "tabs": [
+      "Benefits",
+      "Usage Instructions",
+      "Reviews (128)"
+    ],
+    "superfoodTitle": "Nature's Most Potent Superfood",
+    "superfood": [
+      {
+        "title": "Immune Boost",
+        "desc": "Royal jelly contains unique proteins..."
+      },
+      {
+        "title": "Anti-Aging Properties",
+        "desc": "High in antioxidants that help reduce oxidative stress."
+      },
+      {
+        "title": "Cognitive Clarity",
+        "desc": "Aids in focus and mental endurance."
+      }
+    ],
+    "relatedTitle": "You Might Also Adore",
+    "relatedSub": "Curated Harvests",
+    "viewAll": "View All Collection",
+    "p": {
+      "name": "Premium Royal Jelly Honey",
+      "desc": "A rare fusion of organic Sidr honey and fresh Royal Jelly from the Egyptian delta.",
+      "price": "850.00"
+    },
+    "usageInstructions": [
+      {
+        "title": "Morning Routine",
+        "desc": "Take one tablespoon daily on an empty stomach for maximum absorption and an enduring energy boost throughout the day.",
+        "icon": "wb_sunny"
+      },
+      {
+        "title": "Culinary Pairings",
+        "desc": "Perfectly complements warm beverages, herbal teas, or drizzled over Greek yogurt and fresh berries. Avoid mixing with boiling water to preserve natural enzymes.",
+        "icon": "blender"
+      },
+      {
+        "title": "Storage Setup",
+        "desc": "Store tightly sealed in a cool, dry place away from direct sunlight. Crystallization is a natural process; if it occurs, simply place the jar in a warm water bath.",
+        "icon": "inventory_2"
+      }
+    ],
+    "reviewsTab": {
+      "title": "Customer Reviews",
+      "writeReview": "Write a Review",
+      "cancel": "Cancel",
+      "submit": "Submit Review",
+      "ratingLabel": "Rating:",
+      "nameLabel": "Name",
+      "namePlaceholder": "Your name",
+      "reviewLabel": "Review",
+      "reviewPlaceholder": "What did you think of this product?",
+      "loadMore": "Load More Reviews",
+      "basedOn": "based on",
+      "reviewsWord": "Reviews"
+    },
+    "mockReviews": [
+      {
+        "name": "Ahmed Y.",
+        "date": "12 Oct 2025",
+        "rating": 5,
+        "text": "Excellent quality and packaging. I noticed a significant improvement in my energy levels since I started using this."
+      },
+      {
+        "name": "Sara M.",
+        "date": "28 Sep 2025",
+        "rating": 5,
+        "text": "The taste is incredibly rich and authentic. It is rare to find such purely organic products. Highly recommended!"
+      },
+      {
+        "name": "Omar K.",
+        "date": "05 Sep 2025",
+        "rating": 4,
+        "text": "Great product, but shipping took a bit longer than expected to my area. Still, the quality makes up for it."
+      },
+      {
+        "name": "Laila H.",
+        "date": "18 Aug 2025",
+        "rating": 5,
+        "text": "A staple in our household now. Even the kids love the taste. Perfect with my morning tea."
+      },
+      {
+        "name": "Youssef T.",
+        "date": "10 Aug 2025",
+        "rating": 5,
+        "text": "Amazing. Really natural and pure."
+      }
+    ]
+  },
+  "ourStory": {
+    "hero": {
+      "title": "Born from the Nile.",
+      "desc": "Preserving the ancestral whispers of the Egyptian harvest. A legacy of liquid gold and pure nectar, curated for the modern connoisseur.",
+      "btn": "Explore the Harvest"
+    },
+    "journey": {
+      "sub": "Our Journey",
+      "title": "Between the Desert Sands and the Fertile Banks.",
+      "p1": "Bee & Olive began not as a brand...",
+      "p2": "From the remote oases of Siwa...",
+      "quote": "Our mission is simple: To bring the untamed purity of the Egyptian harvest to your table."
+    },
+    "pillars": {
+      "title": "The Pillars of Our Craft",
+      "desc": "Guided by heritage, driven by uncompromising quality standards.",
+      "items": [
+        {
+          "title": "Quality",
+          "desc": "Every batch undergoes rigorous lab testing."
+        },
+        {
+          "title": "Tradition",
+          "desc": "We honor cold-pressing techniques and traditional beekeeping methods."
+        },
+        {
+          "title": "Nature",
+          "desc": "Working in harmony with the bees and the earth."
+        }
+      ]
+    },
+    "process": {
+      "title": "From Hive to Home",
+      "desc": "Transparency is the heart of our craft.",
+      "btn": "See the full process",
+      "steps": [
+        {
+          "title": "The Cold Extraction",
+          "desc": "Maintaining temperatures below 35°C to preserve vital enzymes."
+        },
+        {
+          "title": "The Guardians",
+          "desc": "Collaborating with small-scale farmers."
+        }
+      ]
+    }
+  },
+  "cart": {
+    "title": "Your Cart",
+    "empty": "Your cart is empty.",
+    "subtotal": "Subtotal",
+    "shippingInfo": "Shipping and taxes calculated at checkout.",
+    "checkout": "Checkout Now",
+    "success": "Added to Cart"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "subtitle": "Final Step",
+    "billing": "Delivery Details",
+    "fname": "First Name",
+    "lname": "Last Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "address": "Detailed Address",
+    "city": "City",
+    "payment": "Payment Method",
+    "cod": "Cash on Delivery",
+    "card": "Credit Card (Coming Soon)",
+    "summary": "Order Summary",
+    "shippingCost": "Shipping Cost",
+    "total": "Grand Total",
+    "placeOrder": "Place Order",
+    "successTitle": "Order Confirmed!",
+    "successDesc": "We will be in touch shortly to coordinate shipping. Thank you for your trust.",
+    "emptyTitle": "Your Cart is Empty",
+    "emptyDesc": "You haven't added any products yet.",
+    "backShop": "Back to Shop",
+    "fees": {
+      "shipping": 50
+    }
+  },
+  "offers": {
+    "title": "Seasonal Offers",
+    "desc": "Discover our exclusive discounts on our finest harvests for a limited time. Quality health at the best prices.",
+    "products": [
+      {
+        "name": "Complete Honey Bundle",
+        "desc": "Includes 3 varieties of organic honey for complete nutrition.",
+        "price": "750",
+        "originalPrice": "950",
+        "badge": "20% OFF",
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuC5AE865vs9TP-ASdseT3MV05sqwFhmAF-t5RtPiFdG9oJB2-8xMve8Gj0w_WyjaNyNwAkWxr6JsIyN5j70c4FDax3GthFDD7gS7zrmfOhbC2d6-NH2rvkXEoBn_HCHClWay1F6nnVYl-fG3gEk0HpcoYMr5kMqvN36kAknbk7XSoLVi1vhAAF9jht9bgNBmXhDukclA3iLVYXmwncwQV7J2H95QhOWOGeFUgcvljyrZb-ttE71LMDddcxpLFFCK9UhiWN7iaQyjHU",
+        "isBundle": true,
+        "bundleItems": [
+          "Mountain Sidr Honey 500g",
+          "Clover Honey 500g",
+          "Black Seed Honey 250g"
+        ]
+      },
+      {
+        "name": "Family Olive Oil Pack",
+        "desc": "Value pack 2L of Extra Virgin Olive Oil.",
+        "price": "480",
+        "originalPrice": "600",
+        "badge": "Saver",
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuAhafBmo0mHxEwstZ0ba0jBgr8bVG4o2hnXRUeW2ZZ2YDiKwU2V1mvGQeBMZrXwqLhh9nD7sSWjHb8B5h6UKSHP5AqBDpySt5sj7e7zdZzKf9fAS5n6DVL8vHQX0TQ7hAKhU80Ww22hrXyEM5NAB4io6GcuMVp40JD1f48UPzUGbbIo6bYZRtQxB33LiDIbjUPSE4NEDZTFClE3zXqoUzObPoJY0YlC8pfnlRxHZZa02GiVXc8hyGpajpMmk1lZ3XpDoTdSzb2YU1w",
+        "isBundle": true,
+        "bundleItems": [
+          "Oasis Olive Oil 1L",
+          "Extra Virgin Olive Oil 1L"
+        ]
+      },
+      {
+        "name": "Morning Fresh Blend",
+        "desc": "Citrus honey mixed with palm pollen for energy.",
+        "price": "250",
+        "originalPrice": "320",
+        "badge": "Top Seller",
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDH-1V6nvnTXR0SsevM8g243tXqbdq3yxifVJ000d_TsyUheVSPt1JBEeSUEjeNdtXwiykYtvPLsmVKBjFVOK_Fxe-Oguv2hVpkUJ4A4le6GoOeLLOSc-6weThcvSQJcjzq8ss450nze4WcIFt9CLISobDA3jB8A22sC3ejvuUSt9Xz0ZfypsINUaKB2bvgWEtTMhZvOnjnRUQM8VzZRsfhup_cqe7a29lXt7ZMFcUJhY3oXO8RyY2Wy2zbMFOQfhVzZpiOhEpJujU"
+      }
+    ]
+  },
+  "blog": {
+    "title": "Health & Nature Library",
+    "desc": "The latest insights in the world of natural food, honey, and virgin olive oil.",
+    "readMore": "Read Article",
+    "backToBlog": "Back to Blog",
+    "relatedProducts": "Related Products",
+    "articles": [
+      {
+        "id": "1",
+        "title": "5 Reasons to Take a Spoon of Honey Daily",
+        "date": "15 Oct 2025",
+        "desc": "Discover the amazing benefits pure honey brings to your immune system and daily energy.",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuB0R_9f_iQYp_3zZ4_a_FjG-_Mvy1_wZqf_2K_O1X3z3vT_T-_3K3Yv-Z1_wZw3X1_wY_3zZ4_a_FjG-_Mvy1_wZqf_2K_O1X3",
+        "label": "Health",
+        "content": "Honey is more than just a natural sweetener; it posesses extraordinary healing properties, especially when eaten on an empty stomach. Firstly, honey acts as a natural antibiotic that coats to the stomach lining. Secondly, honey accelerates metabolism which effectively assists in weight balancing. Thirdly, it is a pure source of direct energy for morning brain activity without the subsequent crashes associated with white sugar."
+      },
+      {
+        "id": "2",
+        "title": "First Press vs. Refined Oils",
+        "date": "02 Nov 2025",
+        "desc": "How do you recognize authentic olive oil? Here is your complete guide to picking the best for your table.",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAUSFyP3qm3XYOBVyi6j-y9aebTDNNYSu8VtPN0dQO64ym0IRHr2DqXLlAnyE8ye_gMLDXyRH8UqosAU7bBVIMbC2MU_-tkyYQ",
+        "label": "Culture",
+        "content": "Refined oils are subjected to massive heat and chemicals which strip them of all natural olive benefits such as antioxidants and vitamins. Extra virgin first press olive oil, however, is cold pressed to retain the droplets of green gold with their original properties. Its robust flavor requires no complexities to enjoy. Always monitor acidity levels to ensure quality."
+      },
+      {
+        "id": "3",
+        "title": "Sidr Honey: Liquid Gold",
+        "date": "22 Dec 2025",
+        "desc": "Why is Sidr considered one of the most precious honeys in the world and how to distinguish it.",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuC5AE865vs9TP-ASdseT3MV05sqwFhmAF-t5RtPiFdG9oJB2-8xMve8Gj0w_WyjaNyNwAkWxr6JsIyN5j70c4FDax3GthFDD7gS7zrmfOhbC2d6-NH2rvkXEoBn_HCHClWay1F6nnVYl-fG3gEk0HpcoYMr5kMqvN36kAknbk7XSoLVi1vhAAF9jht9bgNBmXhDukclA3iLVYXmwncwQV7J2H95QhOWOGeFUgcvljyrZb-ttE71LMDddcxpLFFCK9UhiWN7iaQyjHU",
+        "label": "Products",
+        "content": "Characterized by its dark color and high density, Sidr honey is extracted from the blessed Sidr tree blossoms. This honey is considered a complete nutritional supplement and is strongly used in enhancing fertility and raising physical efficiency due to its rare seasonal production, giving it a high market and nutritional value compared to regular floral honey."
+      },
+      {
+        "id": "4",
+        "title": "Tips for Storing Organic Products",
+        "date": "10 Jan 2026",
+        "desc": "Learn how to maintain the quality of your honey and oil for as long as possible to prevent spoilage.",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCpOiP2kQMQCJH9HjTzZeXw0JcBj_Ye60G4Oiz7e6M6zPk62QwD10oG2ecd-yDxIdZjizLdv7hijSIt-s_ewICus8T9U2RJDNe01LwoPFa14k7Wi3VqpC4a72wlzuylCPawJOEZoo-0BXFqdm1QJ4YgszsNPmsiz7xIUWOCwQO8rxzpi1nlXpgsxU1lwlZsxvsbIDLasMl_qAO24nP9Yu1CFZvBEsD9EgkVGRgRLnqMRz6xkdPXGB5Ts-AbjCpKh4EfeoKdL7K6quk",
+        "label": "Guides",
+        "content": "The primary enemy of organic products is direct sunlight and elevated temperatures. For olive oil, it must be stored in dark-colored bottles inside a dry cabinet, and it is forbidden to place it near the stove. As for honey, contrary to common belief, it shouldn’t be kept in the refrigerator at all. It must be kept at normal room temperature to prevent rapid crystallization."
+      },
+      {
+        "id": "5",
+        "title": "From Hive to Home: Behind the Scenes of Quality",
+        "date": "15 May 2026",
+        "desc": "Discover the meticulous steps we follow at 'Bee & Olive' to extract the purest earthly products to reach your table in their raw form and curative power.",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCH0KRfZVLRpFbgSt78Af3r1iP65-yj1bLe_W5e8LY-yXyCwiBCBS-7_lSmN9hf6i5h6Wc1f6yw9cMwB9t8bPWP2yclRkE6CclOUsRT8Vt-eTppBTnTHrmfXmwQCF2teBItuNSzwVt-_PTgyHCWxBGUth8wUsd06thfPRaumhO2-G3dLIC50TbqikOOuMPc0ZrO0elhKYJFPEPqXgd_jxl2wIujO1HLQPgnIRDoO95km88ppO5bBa72N8_g8QfX2aNH1wVo4Y3Mgzc",
+        "label": "Production",
+        "content": "Since day one, we made a promise to provide raw organic products without any chemical intervention. Our process begins by choosing the best tree breeds and apiaries isolated far from urban pollution. Honey is carefully extracted by hand to ensure it is not exposed to any temperatures that could kill its therapeutic enzymes, while fresh olives are immediately pressed from the field to the mill for cold extraction of green gold. All these details are what make 'Bee & Olive' a lifestyle, not just a consumer choice."
+      }
+    ]
+  }
+}

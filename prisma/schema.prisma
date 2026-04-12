@@ -1,0 +1,165 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Product {
+  id            Int      @id @default(autoincrement())
+  slug          String   @unique
+  nameAr        String
+  nameEn        String
+  descAr        String
+  descEn        String
+  price         Float
+  originalPrice Float?
+  img           String?
+  badgeAr       String?
+  badgeEn       String?
+  isBundle      Boolean  @default(false)
+  bundleItemsAr String[]
+  bundleItemsEn String[]
+  orderItems    OrderItem[]
+  categories    Category[] @relation("ProductToCategory")
+  reviews       Review[]
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model Customer {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  password  String?  // Nullable because of guest checkouts
+  role      String   @default("USER") // USER or ADMIN
+  phone     String?
+  firstName String
+  lastName  String
+  orders    Order[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Order {
+  id              Int         @id @default(autoincrement())
+  orderNumber     String      @unique
+  customerId      Int
+  customer        Customer    @relation(fields: [customerId], references: [id])
+  status          String      @default("PENDING") // PENDING, PROCESSING, SHIPPED, DELIVERED, CANCELLED
+  subtotal        Float       @default(0)
+  totalAmount     Float
+  discount        Float       @default(0)
+  promoCode       String?
+  paymentMethod   String      @default("cod")
+  shippingMethod  String      @default("bosta")
+  shippingAddress String
+  city            String      @default("")
+  notes           String?
+  items           OrderItem[]
+  createdAt       DateTime    @default(now())
+  updatedAt       DateTime    @updatedAt
+}
+
+model OrderItem {
+  id        Int     @id @default(autoincrement())
+  orderId   Int
+  order     Order   @relation(fields: [orderId], references: [id])
+  productId Int
+  product   Product @relation(fields: [productId], references: [id])
+  quantity  Int     @default(1)
+  price     Float   // Historical price at time of order
+}
+
+model Category {
+  id        Int       @id @default(autoincrement())
+  slug      String    @unique
+  nameAr    String
+  nameEn    String
+  products  Product[] @relation("ProductToCategory")
+}
+
+model PromoCode {
+  id         Int      @id @default(autoincrement())
+  code       String   @unique
+  discount   Float    // percentage or fixed amount
+  isPercent  Boolean  @default(true)
+  maxUses    Int?     // null means unlimited
+  usedCount  Int      @default(0)
+  validUntil DateTime?
+  isActive   Boolean  @default(true)
+  createdAt  DateTime @default(now())
+}
+
+model ShippingZone {
+  id         Int      @id @default(autoincrement())
+  nameAr     String   // e.g., "القاهرة والجيزة"
+  nameEn     String   // e.g., "Cairo & Giza"
+  cost       Float
+  deliveryDays String // e.g., "2-3"
+  isActive   Boolean  @default(true)
+}
+
+model SiteSettings {
+  id              Int      @id @default(1)
+  storeNameAr     String   @default("المتجر")
+  storeNameEn     String   @default("Store")
+  logoUrl         String?
+  primaryColor    String   @default("#0f766e") // Default teal-700
+  secondaryColor  String   @default("#d97706") // Default amber-600
+  textColor       String   @default("#1c1917") // Default stone-900
+  headingColor    String   @default("#1c1917") // Default stone-900
+  mutedColor      String   @default("#78716c") // Default stone-500
+  priceColor      String   @default("#16a34a") // Default green-600
+  currencyAr      String   @default("ج.م")
+  currencyEn      String   @default("EGP")
+  whatsappNumber  String?
+  facebookUrl     String?
+  instagramUrl    String?
+  googleVerification String? // Google Search Console verification code
+  gaId            String?   // Google Analytics measurement ID (G-XXXXXXXX)
+  facebookPixelId String?   // Facebook / Meta Pixel ID (e.g. 1234567890)
+  tiktokPixelId   String?   // TikTok Pixel ID (e.g. ABCDEFGHIJKLMN)
+  updatedAt       DateTime @updatedAt
+}
+
+model ContentBlock {
+  id              Int      @id @default(autoincrement())
+  key             String   @unique // e.g., "hero_title", "about_us_text"
+  contentAr       String   @db.Text
+  contentEn       String   @db.Text
+  updatedAt       DateTime @updatedAt
+}
+
+model Article {
+  id              Int      @id @default(autoincrement())
+  slug            String   @unique
+  titleAr         String
+  titleEn         String
+  contentAr       String   @db.Text
+  contentEn       String   @db.Text
+  excerptAr       String?
+  excerptEn       String?
+  coverImage      String?
+  published       Boolean  @default(true)
+  author          String   @default("Admin")
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+model Review {
+  id        Int      @id @default(autoincrement())
+  productId Int
+  product   Product  @relation(fields: [productId], references: [id])
+  name      String
+  rating    Int      // 1 to 5
+  comment   String   @db.Text
+  status    String   @default("PENDING") // PENDING, APPROVED, REJECTED
+  createdAt DateTime @default(now())
+}
+
+

@@ -1,0 +1,540 @@
+{
+  "common": {
+    "brand": "نحلة وزيتونة",
+    "currency": "ج.م",
+    "addToCart": "أضف إلى السلة",
+    "quickView": "نظرة سريعة",
+    "readMore": "اقرأ قصتنا كاملة"
+  },
+  "nav": {
+    "home": "الرئيسية",
+    "shop": "المتجر",
+    "ourStory": "قصتنا",
+    "searchPlaceholder": "ابحث في محاصيلنا...",
+    "offers": "العروض",
+    "blog": "المدونة"
+  },
+  "footer": {
+    "description": "مكرسون للحفاظ على تراث الزراعة المصرية الطبيعية، مع تقديم منتجات ذات جودة فائقة للعالم الحديث.",
+    "quickLinks": "روابط سريعة",
+    "sustainability": "الاستدامة",
+    "shippingPolicy": "سياسة الشحن",
+    "labReports": "تقارير المختبر",
+    "contactUs": "تواصل معنا",
+    "ourPromise": "وعدنا",
+    "promiseDesc": "كل قطرة عسل وكل زجاجة زيت يمكن تتبع مسارها حتى المزرعة. نحن نضمن أجوراً عادلة للمزارعين وتوازناً بيئياً لأرضنا.",
+    "copyright": "© 2024 نحلة وزيتونة. أروع محاصيل الطبيعة في مصر."
+  },
+  "home": {
+    "hero": {
+      "btnShop": "تسوق الآن",
+      "btnProcess": "طرق تحضيرنا",
+      "slides": [
+        {
+          "subtitle": "أروع محاصيل الطبيعة في مصر",
+          "title1": "ذهب",
+          "title2": "الطبيعة",
+          "desc": "اكتشف الجوهر النقي للطبيعة المصرية. من مناحلنا ومزارعنا إلى منزلك، نقدم لك عسلاً طبيعياً وزيوت زيتون بكر معصورة على البارد بجودة لا تُضاهى.",
+          "mainImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuB-dBYTLE950i5ivwp0uoeTmJcnhi7vnC5zaw0Rr7rduDfeHmYjFQlDgbQBFgs1C1sdJFi-4gdx_oEnrefYyzc87XV4InV-3_AdgiBKMV-ARfNyW_YFskKoK_mcPCXtXzb5sdAqkXofCDDJOokDl05hPE2xj8OdtQ0-FDs-l7jwWvyUSFvB5yl_qAeW82j2SIwCEKEX9MmYjI4aFBcqBw4776sjGr2xmPMkSROPjanAPBIW9SXKIx-ZV8p3NactRax9JlU9sOqpS3I",
+          "floatingImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuAUSFyP3qm3XYOBVyi6j-y9aebTDNNYSu8VtPN0dQO64ym0IRHr2DqXLlAnyE8ye_gMLDXyRH8UqosAU7bBVIMbC2MU_-tkyYQ29AxH0PWpGe44AoQyA01P7fuMOSTk7rseXof5bCu4lYcii1YHhzaC-QsC-QHEKPXrHFvLaxkDgdUTpucBA-JhFSmU6TVN7nIkD4seGUQwCEn-jHUFjCsRntPYtThhrtKfBcnN7LLSm8QJa_vEMRmkeZYCHjglAkejXRQJmFQAsTg",
+          "badgeText": "+١٥ ألف",
+          "badgeSub": "عميل سعيد"
+        },
+        {
+          "subtitle": "عصرة أولى على البارد",
+          "title1": "زيت",
+          "title2": "الزيتون الكريستالي",
+          "desc": "منتقى بعناية من أفضل أشجار الزيتون، نعصره لك على البارد ليحتفظ بكامل قيمته الغذائية ونكهته الأصلية المميزة التي تضفي سحراً على مائدتك.",
+          "mainImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuAUSFyP3qm3XYOBVyi6j-y9aebTDNNYSu8VtPN0dQO64ym0IRHr2DqXLlAnyE8ye_gMLDXyRH8UqosAU7bBVIMbC2MU_-tkyYQ29AxH0PWpGe44AoQyA01P7fuMOSTk7rseXof5bCu4lYcii1YHhzaC-QsC-QHEKPXrHFvLaxkDgdUTpucBA-JhFSmU6TVN7nIkD4seGUQwCEn-jHUFjCsRntPYtThhrtKfBcnN7LLSm8QJa_vEMRmkeZYCHjglAkejXRQJmFQAsTg",
+          "floatingImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuAqH-mYp4nHM9V4MbnF1K_P2muhKh3ZPeUi0w9uk1Do7iviy7UzQfpPlk3JhhF6knOstG129a_qPe2FtTmCsEe-4YSkR5QPo2j4De1egDZo1IJdzzjqqlMiVjA_RsQuga2lA7nA3_D8tVL-c25S2cpLvT5BIGOuC_kZyfaxs93hjwg_Q3F8h6Sys2iA_beEcLw8dX_L_7y7miChUVSlvG7kyHAhw8QVzz6AvByew5NWsuv5j9nygLdtRF9dPduQLY85CRt7W6sjpHk",
+          "badgeText": "أقل حموضة",
+          "badgeSub": "جودة عالمية"
+        },
+        {
+          "subtitle": "باقات متكاملة للتوفير",
+          "title1": "عروض",
+          "title2": "نخلة وزيتونة",
+          "desc": "جمعنا لك الفائدة بأفضل الأسعار. احصل على باقات الشحن المجاني والتوفير المذهل عند شراء العسل الممزوج بأجود أنواع الزيوت الطبيعية.",
+          "mainImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuDH-1V6nvnTXR0SsevM8g243tXqbdq3yxifVJ000d_TsyUheVSPt1JBEeSUEjeNdtXwiykYtvPLsmVKBjFVOK_Fxe-Oguv2hVpkUJ4A4le6GoOeLLOSc-6weThcvSQJcjzq8ss450nze4WcIFt9CLISobDA3jB8A22sC3ejvuUSt9Xz0ZfypsINUaKB2bvgWEtTMhZvOnjnRUQM8VzZRsfhup_cqe7a29lXt7ZMFcUJhY3oXO8RyY2Wy2zbMFOQfhVzZpiOhEpJujU",
+          "floatingImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuB0R_9f_iQYp_3zZ4_a_FjG-_Mvy1_wZqf_2K_O1X3",
+          "badgeText": "توفير",
+          "badgeSub": "باقات مدهشة"
+        }
+      ]
+    },
+    "benefits": {
+      "b1": {
+        "title": "طبيعي 100%",
+        "desc": "منتجات نقية غير معدلة، يتم حصادها باستخدام أساليب تقليدية تحترم الأرض والطبيعة."
+      },
+      "b2": {
+        "title": "معتمد عضوياً",
+        "desc": "تتبع مزارعنا ومناحلنا بروتوكولات عضوية صارمة لضمان أعلى قيمة غذائية."
+      },
+      "b3": {
+        "title": "توصيل سريع",
+        "desc": "من مزارعنا المحلية إلى باب منزلك مباشرة خلال 48 ساعة لضمان أقصى درجات النضارة والفائدة."
+      }
+    },
+    "featured": {
+      "title1": "مختارات",
+      "title2": "الموسم",
+      "desc": "اختار خبراؤنا هذه المجموعات الاستثنائية بعناية لعمق نكهتها وخصائصها العلاجية المذهلة.",
+      "product1": {
+        "badge": "شارة الجودة الحرفية",
+        "name": "عسل برسيم ممتاز",
+        "desc": "خام، غير مصفى، عالي الإنزيمات",
+        "price": "450"
+      },
+      "product2": {
+        "badge": "كمية محدودة",
+        "name": "زيت زيتون بكر ممتاز",
+        "desc": "عصرة أولى على البارد، من مزارع سیوة",
+        "price": "320"
+      }
+    },
+    "teaser": {
+      "subtitle": "المنسق الحرفي",
+      "title1": "جذورنا في أراضي مصر",
+      "title2": "الخصبة القديمة",
+      "p1": "ولدت 'نحلة وزيتونة' من شغفنا بنقاء الطبيعة وعودتها للفطرة. نحن نؤمن بأن الصحة الحقيقية تنبع من الأرض، دون المساس بها عبر عمليات التصنيع الحديثة.",
+      "p2": "بدأت رحلتنا في بساتين الدلتا الصغيرة وتلال سيناء المشمّسة، بحثاً عن أكثر الحرفيين والمزارعين التزاماً، الذين يعاملون محصولهم كعمل فني وقيمة متوارثة وليس مجرد سلعة."
+    },
+    "newsletter": {
+      "title1": "انضم إلى دوائر",
+      "title2": "محاصيلنا",
+      "desc": "احصل على ولوج حصري لمنتجات الموسم النادرة، الوصفات الصحية، والإصدارات المحدودة للمحاصيل.",
+      "placeholder": "البريد الإلكتروني الخاص بك",
+      "btn": "اشترك",
+      "disclaimer": "نحن نحترم خصوصيتك. يمكنك إلغاء الاشتراك في أي وقت."
+    },
+    "bestSellers": {
+      "title": "الأكثر مبيعاً",
+      "subtitle": "اختيارات عملائنا",
+      "desc": "اكتشف المنتجات الأكثر طلباً والتي حازت على ثقة ورضا عملائنا بجودتها الطبيعية الفائقة.",
+      "products": [
+        {
+          "name": "عسل السدر الجبلي",
+          "desc": "نقي 100% ومنتقى بعناية للصحة والمناعة",
+          "price": "450",
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCpOiP2kQMQCJH9HjTzZeXw0JcBj_Ye60G4Oiz7e6M6zPk62QwD10oG2ecd-yDxIdZjizLdv7hijSIt-s_ewICus8T9U2RJDNe01LwoPFa14k7Wi3VqpC4a72wlzuylCPawJOEZoo-0BXFqdm1QJ4YgszsNPmsiz7xIUWOCwQO8rxzpi1nlXpgsxU1lwlZsxvsbIDLasMl_qAO24nP9Yu1CFZvBEsD9EgkVGRgRLnqMRz6xkdPXGB5Ts-AbjCpKh4EfeoKdL7K6quk",
+          "badge": "نفذ بسرعة"
+        },
+        {
+          "name": "خلطة المناعة بالحبة السوداء",
+          "desc": "مزيج فريد للطاقة اليومية والنشاط",
+          "price": "380",
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuAUSFyP3qm3XYOBVyi6j-y9aebTDNNYSu8VtPN0dQO64ym0IRHr2DqXLlAnyE8ye_gMLDXyRH8UqosAU7bBVIMbC2MU_-tkyYQ29AxH0PWpGe44AoQyA01P7fuMOSTk7rseXof5bCu4lYcii1YHhzaC-QsC-QHEKPXrHFvLaxkDgdUTpucBA-JhFSmU6TVN7nIkD4seGUQwCEn-jHUFjCsRntPYtThhrtKfBcnN7LLSm8QJa_vEMRmkeZYCHjglAkejXRQJmFQAsTg",
+          "badge": "الأكثر طلباً"
+        },
+        {
+          "name": "زيت زيتون الواحات البكر",
+          "desc": "عصرة أولى نقية للحفاظ على الطعم الأصلي",
+          "price": "290",
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCw7rvCvpuCRO8s3y3nFrxHg-B8TUlr2OWuWibd7McVSWmSDWrkdD9RYlQDTog0DnsCxIADefL7gj2vPmiphtbU5onf49JkBfRyjOTU5tC-MGFr83sdOeJOMBf4-nBhH3OyfjxSIjAkUIF7PklLdUw042d92wLTxrEQ55x-ZRH7yMfI3xN2_5Be2aap3VZbpMPJ5s7O7XM8qulrCNXE_1v47N838U7sLMMEynWU30q2-UqvIZM7oIJbIfZAjD5tY95AsSJDrS2oJmY",
+          "badge": ""
+        }
+      ]
+    },
+    "categories": {
+      "title": "تسوق حسب الفئة",
+      "subtitle": "اختيارات مصنفة لك",
+      "items": [
+        {
+          "name": "عسل الجبال",
+          "desc": "أجود أنواع العسل من القمم",
+          "icon": "landscape",
+          "link": "/shop",
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDH-1V6nvnTXR0SsevM8g243tXqbdq3yxifVJ000d_TsyUheVSPt1JBEeSUEjeNdtXwiykYtvPLsmVKBjFVOK_Fxe-Oguv2hVpkUJ4A4le6GoOeLLOSc-6weThcvSQJcjzq8ss450nze4WcIFt9CLISobDA3jB8A22sC3ejvuUSt9Xz0ZfypsINUaKB2bvgWEtTMhZvOnjnRUQM8VzZRsfhup_cqe7a29lXt7ZMFcUJhY3oXO8RyY2Wy2zbMFOQfhVzZpiOhEpJujU"
+        },
+        {
+          "name": "عسل الأزهار",
+          "desc": "رحيق نقي من المزارع",
+          "icon": "local_florist",
+          "link": "/shop",
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuB-dBYTLE950i5ivwp0uoeTmJcnhi7vnC5zaw0Rr7rduDfeHmYjFQlDgbQBFgs1C1sdJFi-4gdx_oEnrefYyzc87XV4InV-3_AdgiBKMV-ARfNyW_YFskKoK_mcPCXtXzb5sdAqkXofCDDJOokDl05hPE2xj8OdtQ0-FDs-l7jwWvyUSFvB5yl_qAeW82j2SIwCEKEX9MmYjI4aFBcqBw4776sjGr2xmPMkSROPjanAPBIW9SXKIx-ZV8p3NactRax9JlU9sOqpS3I"
+        },
+        {
+          "name": "زيوت طبيعية",
+          "desc": "عصرة أولى نقية",
+          "icon": "water_drop",
+          "link": "/shop",
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuAUSFyP3qm3XYOBVyi6j-y9aebTDNNYSu8VtPN0dQO64ym0IRHr2DqXLlAnyE8ye_gMLDXyRH8UqosAU7bBVIMbC2MU_-tkyYQ29AxH0PWpGe44AoQyA01P7fuMOSTk7rseXof5bCu4lYcii1YHhzaC-QsC-QHEKPXrHFvLaxkDgdUTpucBA-JhFSmU6TVN7nIkD4seGUQwCEn-jHUFjCsRntPYtThhrtKfBcnN7LLSm8QJa_vEMRmkeZYCHjglAkejXRQJmFQAsTg"
+        },
+        {
+          "name": "باقات مميزة",
+          "desc": "مجموعات للتوفير والهدايا",
+          "icon": "redeem",
+          "link": "/offers",
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuAqH-mYp4nHM9V4MbnF1K_P2muhKh3ZPeUi0w9uk1Do7iviy7UzQfpPlk3JhhF6knOstG129a_qPe2FtTmCsEe-4YSkR5QPo2j4De1egDZo1IJdzzjqqlMiVjA_RsQuga2lA7nA3_D8tVL-c25S2cpLvT5BIGOuC_kZyfaxs93hjwg_Q3F8h6Sys2iA_beEcLw8dX_L_7y7miChUVSlvG7kyHAhw8QVzz6AvByew5NWsuv5j9nygLdtRF9dPduQLY85CRt7W6sjpHk"
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "مَن جربنا، يعود إلينا",
+      "subtitle": "ماذا يقول عملاؤنا",
+      "reviews": [
+        {
+          "name": "أحمد سعيد",
+          "role": "عميل مميز",
+          "text": "أفضل جودة عسل جربتها في حياتي، التغليف الفاخر وطعم السدر لا يعلى عليه. التوصيل كان سريعاً جداً.",
+          "rating": 5,
+          "date": "قبل يومين"
+        },
+        {
+          "name": "مرام عبدالله",
+          "role": "طاهية",
+          "text": "استخدم زيت الزيتون من نخلة وزيتونة في مطبخي يومياً. العصرة الأولى واضحة من رائحته الزكية!",
+          "rating": 5,
+          "date": "قبل أسبوع"
+        },
+        {
+          "name": "فهد الناصر",
+          "role": "عميل مستدام",
+          "text": "الباقات العائلية هي مفضلتنا دائماً، توفر قيمة ممتازة ونضمن جودة صحية لأطفالنا.",
+          "rating": 4,
+          "date": "قبل شهر"
+        }
+      ]
+    },
+    "blog": {
+      "title": "مكتبة الصحة والطبيعة",
+      "subtitle": "نصائح ومقالات",
+      "articles": [
+        {
+          "title": "٥ أسباب لتناول ملعقة عسل على الريق",
+          "date": "١٥ أكتوبر ٢٠٢٥",
+          "desc": "تعرف على الفوائد المذهلة التي يمنحها العسل الطبيعي لجهازك المناعي وطاقتك اليومية.",
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuB0R_9f_iQYp_3zZ4_a_FjG-_Mvy1_wZqf_2K_O1X3z3vT_T-_3K3Yv-Z1_wZw3X1_wY_3zZ4_a_FjG-_Mvy1_wZqf_2K_O1X3",
+          "label": "صحة"
+        },
+        {
+          "title": "الفرق بين العصرة الأولى والزيوت المكررة",
+          "date": "٠٢ نوفمبر ٢٠٢٥",
+          "desc": "كيف تتعرف على زيت الزيتون الأصلي؟ هنا دليلك الكامل لاختيار الزيت الأفضل لمائدتك.",
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAUSFyP3qm3XYOBVyi6j-y9aebTDNNYSu8VtPN0dQO64ym0IRHr2DqXLlAnyE8ye_gMLDXyRH8UqosAU7bBVIMbC2MU_-tkyYQ",
+          "label": "ثقافة"
+        }
+      ],
+      "btn": "تصفح المدونة"
+    }
+  },
+  "shop": {
+    "title": "مجموعتنا حصرياً",
+    "desc": "اكتشف مجموعتنا المختارة بعناية من المحاصيل المصرية الفاخرة، من رحيق السدر الذهبي إلى الزيت المعصور على البارد.",
+    "showing": "عرض 6 من 36 منتج",
+    "categories": [
+      "كل المحاصيل",
+      "عسل ممتاز",
+      "زيت زيتون حرفي",
+      "خلطات نباتية"
+    ],
+    "priceRange": "نطاق السعر",
+    "quality": {
+      "title": "جودة حرفية",
+      "desc": "كل برطمان هو شهادة على جودة التربة المصرية. يتم حصادها يدوياً وفحصها معملياً."
+    },
+    "products": [
+      {
+        "name": "عسل السدر (أسوان)",
+        "desc": "أندر رحيق من أودية الصحراء. غني وعلاجي وعطري جداً.",
+        "price": 450,
+        "badge": "كمية محدودة",
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDLvSKQSCOQWA_AqoCUWHyCDyEuekbx2Z9gYa3MdvG0OFvQNAU2mMABtYUJ9Rj1pckCr4Ntz_oOvDxk2r6GLZmYUI20me3SFNL6nQyGG2rKXWaSpaQNRBvMjFOxxtG72RsHTVBX2YbtRRZSSFKSLzn192bvjFvj-SsHt5xA7z4hwZP3ROeASdQbE8vUOCEFtJSLsRb7QAnULGxPB9hTzaKeSs0Xsz-J8Dk1mXwahNmEkJW2SR808Cx5eSA0CxonTgRSIaEPt0SwwyE"
+      },
+      {
+        "name": "زيت زيتون دي بكر",
+        "desc": "عصرة أولى خام، من واحة سيوة.",
+        "price": 280,
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuAhafBmo0mHxEwstZ0ba0jBgr8bVG4o2hnXRUeW2ZZ2YDiKwU2V1mvGQeBMZrXwqLhh9nD7sSWjHb8B5h6UKSHP5AqBDpySt5sj7e7zdZzKf9fAS5n6DVL8vHQX0TQ7hAKhU80Ww22hrXyEM5NAB4io6GcuMVp40JD1f48UPzUGbbIo6bYZRtQxB33LiDIbjUPSE4NEDZTFClE3zXqoUzObPoJY0YlC8pfnlRxHZZa02GiVXc8hyGpajpMmk1lZ3XpDoTdSzb2YU1w"
+      }
+    ],
+    "banner": {
+      "title": "اشترك للحصول على تنبيهات الحصاد",
+      "desc": "انضم إلى مجتمعنا وكن أول من يعلم بإصدار كميات العسل الموسمية المحدودة.",
+      "btn": "انضم إلينا",
+      "placeholder": "عنوان بريدك الإلكتروني"
+    }
+  },
+  "productDetail": {
+    "reviews": "128 تقييم",
+    "size": "حجم البرطمان",
+    "sizes": [
+      "250 جم",
+      "500 جم",
+      "1 كجم"
+    ],
+    "badges": [
+      "عضوي 100%",
+      "فحص معملي",
+      "شحن مجاني"
+    ],
+    "tabs": [
+      "الفوائد",
+      "تعليمات الاستخدام",
+      "التقييمات (128)"
+    ],
+    "superfoodTitle": "أقوى غذاء طبيعي خارق",
+    "superfood": [
+      {
+        "title": "تعزيز المناعة",
+        "desc": "يحتوي غذاء الملكات على بروتينات فريدة تحفز إنتاج الخلايا المناعية."
+      },
+      {
+        "title": "خصائص مضادة للشيخوخة",
+        "desc": "غني بمضادات الأكسدة التي تساعد في تقليل الإجهاد التأكسدي."
+      },
+      {
+        "title": "صفاء الذهن",
+        "desc": "يساعد في التركيز والصحة العقلية."
+      }
+    ],
+    "relatedTitle": "مختارات من أجلك",
+    "relatedSub": "تنسيقات حرفية",
+    "viewAll": "عرض كل المجموعة",
+    "p": {
+      "name": "عسل غذاء ملكات النحل الممتاز",
+      "desc": "دمج نادر بين عسل السدر العضوي وغذاء الملكات الطازج من الدلتا المصرية.",
+      "price": "850.00"
+    },
+    "usageInstructions": [
+      {
+        "title": "الروتين الصباحي",
+        "desc": "تناول ملعقة طعام يومياً على معدة فارغة لأقصى امتصاص وتعزيز مستدام للطاقة طوال اليوم.",
+        "icon": "wb_sunny"
+      },
+      {
+        "title": "الإضافات الغذائية",
+        "desc": "مثالي مع المشروبات الدافئة، الشاي العشبي، أو إضافته فوق الزبادي اليوناني والتوت الطازج. تجنب خلطه بماء مغلي للحفاظ على الإنزيمات الطبيعية.",
+        "icon": "blender"
+      },
+      {
+        "title": "إعدادات التخزين",
+        "desc": "احفظه محكم الغلق في مكان بارد وجاف بعيداً عن أشعة الشمس المباشرة. التبلور عملية طبيعية؛ إذا حدث ذلك، ضع العبوة في حمام ماء دافئ.",
+        "icon": "inventory_2"
+      }
+    ],
+    "reviewsTab": {
+      "title": "تقييمات العملاء",
+      "writeReview": "كتابة تقييم",
+      "cancel": "إلغاء",
+      "submit": "إرسال التقييم",
+      "ratingLabel": "التقييم:",
+      "nameLabel": "الاسم",
+      "namePlaceholder": "اسمك الكريم",
+      "reviewLabel": "التعليق",
+      "reviewPlaceholder": "ما رأيك في هذا المنتج؟",
+      "loadMore": "تحميل المزيد من التقييمات",
+      "basedOn": "بناءً على",
+      "reviewsWord": "تقييماً"
+    },
+    "mockReviews": [
+      {
+        "name": "أحمد ي.",
+        "date": "١٢ أكتوبر ٢٠٢٥",
+        "rating": 5,
+        "text": "جودة وتغليف ممتازين. لاحظت تحسناً كبيراً في مستويات الطاقة لدي منذ أن بدأت استخدامه."
+      },
+      {
+        "name": "سارة م.",
+        "date": "٢٨ سبتمبر ٢٠٢٥",
+        "rating": 5,
+        "text": "المذاق غني وأصلي بشكل لا يصدق. من النادر العثور على منتجات عضوية بهذا النقاء. أوصي به بشدة!"
+      },
+      {
+        "name": "عمر ك.",
+        "date": "٠٥ سبتمبر ٢٠٢٥",
+        "rating": 4,
+        "text": "منتج رائع، لكن الشحن استغرق وقتاً أطول بقليل من المتوقع لمنطقتي. ومع ذلك، الجودة تعوض ذلك."
+      },
+      {
+        "name": "ليلى هـ.",
+        "date": "١٨ أغسطس ٢٠٢٥",
+        "rating": 5,
+        "text": "أصبح أساسياً في منزلنا الآن. حتى الأطفال يحبون طعمه. مثالي مع شاي الصباح."
+      },
+      {
+        "name": "يوسف ط.",
+        "date": "١٠ أغسطس ٢٠٢٥",
+        "rating": 5,
+        "text": "مذهل. طبيعي ونقي حقاً."
+      }
+    ]
+  },
+  "ourStory": {
+    "hero": {
+      "title": "وُلدت من النيل.",
+      "desc": "نحافظ على همسات الأجداد لحصاد مصر. إرث من الذهب السائل والرحيق النقي، مُنسق لعشاق الذوق الرفيع الحديث.",
+      "btn": "استكشف المحصول"
+    },
+    "journey": {
+      "sub": "رحلتنا",
+      "title": "بين رمال الصحراء والضفاف الخصبة.",
+      "p1": "نحلة وزيتونة ليست مجرد علامة تجارية..",
+      "p2": "من واحات سيوة النائية..",
+      "quote": "مهمتنا بسيطة: أن نأتي بالنقاء الفطري من الحصاد المصري إلى مائدتك."
+    },
+    "pillars": {
+      "title": "ركائز حرفتنا",
+      "desc": "مسترشدين بالتراث، ومرتكزين على معايير الجودة الصارمة.",
+      "items": [
+        {
+          "title": "الجودة",
+          "desc": "تخضع كل دفعة لفحوصات معملية صارمة."
+        },
+        {
+          "title": "التقاليد",
+          "desc": "نكرَم تقنيات العصر على البارد وأساليب تربية النحل التقليدية."
+        },
+        {
+          "title": "الطبيعة",
+          "desc": "العمل بانسجام مع النحل والأرض."
+        }
+      ]
+    },
+    "process": {
+      "title": "من الخلية للمنزل",
+      "desc": "الشفافية هي قلب حرفتنا.",
+      "btn": "رؤية العملية كاملة",
+      "steps": [
+        {
+          "title": "الاستخلاص البارد",
+          "desc": "الحفاظ على درجات حرارة أصلية."
+        },
+        {
+          "title": "الحراس",
+          "desc": "التعاون مع صغار المزارعين."
+        }
+      ]
+    }
+  },
+  "cart": {
+    "title": "سلة المشتريات",
+    "empty": "عربتك فارغة حالياً.",
+    "subtotal": "الإجمالي الفرعي",
+    "shippingInfo": "يتم حساب ضرائب وتكاليف الشحن عند الدفع.",
+    "checkout": "إتمام الطلب",
+    "success": "تمت الإضافة بنجاح"
+  },
+  "checkout": {
+    "title": "إتمام الطلب",
+    "subtitle": "الخطوة الأخيرة",
+    "billing": "بيانات التوصيل",
+    "fname": "الاسم الأول",
+    "lname": "اسم العائلة",
+    "email": "البريد الإلكتروني",
+    "phone": "رقم الهاتف",
+    "address": "العنوان بالتفصيل",
+    "city": "المدينة",
+    "payment": "طريقة الدفع",
+    "cod": "الدفع عند الاستلام",
+    "card": "البطاقة الائتمانية (قريباً)",
+    "summary": "ملخص الطلب",
+    "shippingCost": "تكلفة الشحن",
+    "total": "الإجمالي النهائي",
+    "placeOrder": "تأكيد الطلب",
+    "successTitle": "تم تأكيد طلبك!",
+    "successDesc": "سنقوم بالتواصل معك قريباً لتأكيد موعد الشحن. شكراً لثقتك بنا.",
+    "emptyTitle": "سلتك فارغة",
+    "emptyDesc": "لم تقم بإضافة أي منتجات بعد.",
+    "backShop": "العودة للمتجر",
+    "fees": {
+      "shipping": 50
+    }
+  },
+  "offers": {
+    "title": "عروض الموسم",
+    "desc": "اكتشف خصوماتنا الحصرية على أفضل وأجود المحاصيل لفترة محدودة، لضمان صحتك بأفضل الأسعار.",
+    "products": [
+      {
+        "name": "باقة العسل الشاملة",
+        "desc": "تتضمن 3 أنواع من العسل العضوي لتغذية متكاملة",
+        "price": "750",
+        "originalPrice": "950",
+        "badge": "خصم 20%",
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuC5AE865vs9TP-ASdseT3MV05sqwFhmAF-t5RtPiFdG9oJB2-8xMve8Gj0w_WyjaNyNwAkWxr6JsIyN5j70c4FDax3GthFDD7gS7zrmfOhbC2d6-NH2rvkXEoBn_HCHClWay1F6nnVYl-fG3gEk0HpcoYMr5kMqvN36kAknbk7XSoLVi1vhAAF9jht9bgNBmXhDukclA3iLVYXmwncwQV7J2H95QhOWOGeFUgcvljyrZb-ttE71LMDddcxpLFFCK9UhiWN7iaQyjHU",
+        "isBundle": true,
+        "bundleItems": [
+          "عسل سدر جبلي 500جم",
+          "عسل برسيم 500جم",
+          "عسل حبة البركة 250جم"
+        ]
+      },
+      {
+        "name": "زيت الزيتون العائلي",
+        "desc": "عبوة توفير 2 لتر من زيت الزيتون البكر الممتاز",
+        "price": "480",
+        "originalPrice": "600",
+        "badge": "توفير",
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuAhafBmo0mHxEwstZ0ba0jBgr8bVG4o2hnXRUeW2ZZ2YDiKwU2V1mvGQeBMZrXwqLhh9nD7sSWjHb8B5h6UKSHP5AqBDpySt5sj7e7zdZzKf9fAS5n6DVL8vHQX0TQ7hAKhU80Ww22hrXyEM5NAB4io6GcuMVp40JD1f48UPzUGbbIo6bYZRtQxB33LiDIbjUPSE4NEDZTFClE3zXqoUzObPoJY0YlC8pfnlRxHZZa02GiVXc8hyGpajpMmk1lZ3XpDoTdSzb2YU1w",
+        "isBundle": true,
+        "bundleItems": [
+          "زيت زيتون الواحات 1 لتر",
+          "زيت زيتون بكر ممتاز 1 لتر"
+        ]
+      },
+      {
+        "name": "مزيج الصباح المنعش",
+        "desc": "عسل الموالح المميز مع طلع النخل للطاقة",
+        "price": "250",
+        "originalPrice": "320",
+        "badge": "الأكثر مبيعاً",
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDH-1V6nvnTXR0SsevM8g243tXqbdq3yxifVJ000d_TsyUheVSPt1JBEeSUEjeNdtXwiykYtvPLsmVKBjFVOK_Fxe-Oguv2hVpkUJ4A4le6GoOeLLOSc-6weThcvSQJcjzq8ss450nze4WcIFt9CLISobDA3jB8A22sC3ejvuUSt9Xz0ZfypsINUaKB2bvgWEtTMhZvOnjnRUQM8VzZRsfhup_cqe7a29lXt7ZMFcUJhY3oXO8RyY2Wy2zbMFOQfhVzZpiOhEpJujU"
+      }
+    ]
+  },
+  "blog": {
+    "title": "مكتبة الصحة والطبيعة",
+    "desc": "أحدث التدوينات في عالم الغذاء الطبيعي والعسل وزيت الزيتون البكر.",
+    "readMore": "اقرأ المقالة",
+    "backToBlog": "العودة للمدونة",
+    "relatedProducts": "منتجات ذات صلة بالمقال",
+    "articles": [
+      {
+        "id": "1",
+        "title": "٥ أسباب لتناول ملعقة عسل على الريق",
+        "date": "١٥ أكتوبر ٢٠٢٥",
+        "desc": "تعرف على الفوائد المذهلة التي يمنحها العسل الطبيعي لجهازك المناعي وطاقتك اليومية.",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuB0R_9f_iQYp_3zZ4_a_FjG-_Mvy1_wZqf_2K_O1X3z3vT_T-_3K3Yv-Z1_wZw3X1_wY_3zZ4_a_FjG-_Mvy1_wZqf_2K_O1X3",
+        "label": "صحة",
+        "content": "العسل ليس مجرد محلي طبيعي؛ فهو يحمل خصائص شفائية مذهلة، خاصة عند تناوله على الريق. أولاً، يعمل العسل كمضاد حيوي طبيعي يُغلف جدار المعدة ويحميها. ثانياً، يُسرّع العسل من عملية الأيض وهو ما قد يساعد بفعالية في ضبط الوزن. ثالثاً، يُعد مصدراً نقياً للطاقة المباشرة اللازمة لنشاط الدماغ في الصباح الباكر دون أعراض الإرهاق اللاحقة التي يسببها السكر الأبيض."
+      },
+      {
+        "id": "2",
+        "title": "الفرق بين العصرة الأولى والزيوت المكررة",
+        "date": "٠٢ نوفمبر ٢٠٢٥",
+        "desc": "كيف تتعرف على زيت الزيتون الأصلي؟ هنا دليلك الكامل لاختيار الزيت الأفضل لمائدتك.",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAUSFyP3qm3XYOBVyi6j-y9aebTDNNYSu8VtPN0dQO64ym0IRHr2DqXLlAnyE8ye_gMLDXyRH8UqosAU7bBVIMbC2MU_-tkyYQ",
+        "label": "ثقافة",
+        "content": "الزيوت المكررة يتم إخضاعها لدرجات حرارة هائلة ومواد كيميائية تفقدها كافة الفوائد الطبيعية للزيتونة من مضادات أكسدة وڤيتامينات. أما زيت العصرة الأولى البكر الممتاز، فهو يُعصر على البارد للاحتفاظ بقطرات الذهب الأخضر بخصائصها الأصلية، ونكهتها القوية التي لا تحتاج لتعقيدات للوصول لمتعة التذوق. دائماً راقب مستوى الحموضة للتأكد من الجودة."
+      },
+      {
+        "id": "3",
+        "title": "عسل السدر الحضرمي: الذهب السائل",
+        "date": "٢٢ ديسمبر ٢٠٢٥",
+        "desc": "لماذا يُعد عسل السدر من أثمن أنواع العسل في العالم وكيف تفرقه عن غيره.",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuC5AE865vs9TP-ASdseT3MV05sqwFhmAF-t5RtPiFdG9oJB2-8xMve8Gj0w_WyjaNyNwAkWxr6JsIyN5j70c4FDax3GthFDD7gS7zrmfOhbC2d6-NH2rvkXEoBn_HCHClWay1F6nnVYl-fG3gEk0HpcoYMr5kMqvN36kAknbk7XSoLVi1vhAAF9jht9bgNBmXhDukclA3iLVYXmwncwQV7J2H95QhOWOGeFUgcvljyrZb-ttE71LMDddcxpLFFCK9UhiWN7iaQyjHU",
+        "label": "منتجات",
+        "content": "يتميز عسل السدر بلونه الداكن وكثافته العالية، ويستخلص من زهور شجرة السدر المباركة. يُعتبر هذا العسل مكملاً غذائياً متكاملاً ويستخدم بقوة في تحسين الخصوبة ورفع مستويات الكفاءة الجسدية والعقلية نظراً لندرة إنتاجه الموسمي، وهو ما يعطيه قيمته السوقية والغذائية العالية مقارنة بعسل الأزهار العادي."
+      },
+      {
+        "id": "4",
+        "title": "نصائح لتخزين المنتجات العضوية بشكل صحيح",
+        "date": "١٠ يناير ٢٠٢٦",
+        "desc": "تعلم كيف تحافظ على جودة العسل والزيت لديك لأطول فترة ممكنة لتجنب التلف.",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCpOiP2kQMQCJH9HjTzZeXw0JcBj_Ye60G4Oiz7e6M6zPk62QwD10oG2ecd-yDxIdZjizLdv7hijSIt-s_ewICus8T9U2RJDNe01LwoPFa14k7Wi3VqpC4a72wlzuylCPawJOEZoo-0BXFqdm1QJ4YgszsNPmsiz7xIUWOCwQO8rxzpi1nlXpgsxU1lwlZsxvsbIDLasMl_qAO24nP9Yu1CFZvBEsD9EgkVGRgRLnqMRz6xkdPXGB5Ts-AbjCpKh4EfeoKdL7K6quk",
+        "label": "إرشادات",
+        "content": "العدو الأول للمنتجات العضوية هو ضوء الشمس المباشر والحرارة المرتفعة. بالنسبة لزيت الزيتون، يجب حفظه في زجاجات قاتمة اللون داخل خزانة جافة، كما يحظر وضعه جانب الموقد. وبالنسبة للعسل، فعلى عكس الشائع، لا يُحفظ في الثلاجة إطلاقاً بل يُحفظ في درجة حرارة الغرفة العادية لتفادي عملية التبلور السريع."
+      },
+      {
+        "id": "5",
+        "title": "رحلتنا من الخلية إلى المنزل: كواليس الجودة",
+        "date": "١٥ مايو ٢٠٢٦",
+        "desc": "اكتشف الخطوات الدقيقة التي نتبعها في 'نحلة وزيتونة' لاستخراج أنقى منتجات الأرض لتصل مائدتك بطبيعتها الخام وتأثيرها العلاجي.",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCH0KRfZVLRpFbgSt78Af3r1iP65-yj1bLe_W5e8LY-yXyCwiBCBS-7_lSmN9hf6i5h6Wc1f6yw9cMwB9t8bPWP2yclRkE6CclOUsRT8Vt-eTppBTnTHrmfXmwQCF2teBItuNSzwVt-_PTgyHCWxBGUth8wUsd06thfPRaumhO2-G3dLIC50TbqikOOuMPc0ZrO0elhKYJFPEPqXgd_jxl2wIujO1HLQPgnIRDoO95km88ppO5bBa72N8_g8QfX2aNH1wVo4Y3Mgzc",
+        "label": "الإنتاج",
+        "content": "منذ اليوم الأول، قطعنا عهداً على أنفسنا بتقديم المنتجات العضوية الخام دون أي تدخل كيميائي. تبدأ عمليتنا من اختيار أفضل السلالات الشجرية والمناحل المنعزلة بعيداً عن التلوث الحضري. يتم استخراج العسل يدوياً بعناية لضمان عدم تعرضه لأي درجات حرارة قد تقتل إنزيماته العلاجية، بينما يتم ضغط ثمار الزيتون الطازجة من الحقل إلى المعصرة فوراً لاستخلاص الذهب الأخضر على البارد. كل هذه التفاصيل هي ما تجعل من 'نحلة وزيتونة' أسلوب حياة، وليس مجرد اختيار استهلاكي."
+      }
+    ]
+  }
+}
