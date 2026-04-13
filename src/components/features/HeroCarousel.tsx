@@ -99,8 +99,8 @@ export default function HeroCarousel({ dict, lang }: { dict: any, lang: string }
             </div>
           </div>
 
-          <div className="lg:w-1/2 w-full relative h-[400px] sm:h-[500px] md:h-[600px] xl:h-[800px] flex items-center justify-center -mt-8 md:mt-0" key={`img-${currentSlide}`}>
-             <div className="relative w-full h-[90%] md:h-full aspect-square max-w-[800px] mx-auto z-10 pt-4 md:pt-10 lg:pt-0 animate-hero-img">
+          <div className="lg:w-1/2 w-full relative h-[320px] sm:h-[400px] md:h-[600px] xl:h-[800px] flex items-center justify-center -mt-4 md:mt-0" key={`img-${currentSlide}`}>
+             <div className="relative w-[90%] sm:w-[85%] h-[90%] md:w-full md:h-full aspect-square max-w-[800px] mx-auto z-10 pt-4 md:pt-10 lg:pt-0 animate-hero-img">
                {/* Main Image */}
                <div className="absolute inset-0 rounded-[2.5rem] md:rounded-[4rem] xl:rounded-[6rem] overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.1)] md:shadow-[0_30px_60px_rgba(0,0,0,0.15)] border-[8px] md:border-[12px] border-surface-container-lowest transition-transform duration-700 bg-surface">
                  <img 
@@ -121,13 +121,13 @@ export default function HeroCarousel({ dict, lang }: { dict: any, lang: string }
                </div>
 
                {/* Floating element 2: Trust Card */}
-               <div className="absolute top-8 md:top-24 -right-4 md:-right-12 rtl:-right-auto rtl:right-auto rtl:-left-4 md:rtl:-left-12 bg-surface/95 backdrop-blur-2xl p-4 md:p-8 rounded-2xl md:rounded-[2rem] shadow-[0_15px_30px_rgba(0,0,0,0.1)] border border-outline-variant/30 flex items-center gap-3 md:gap-6 z-20 animate-[bounce_6s_ease-in-out_infinite_reverse] scale-75 md:scale-100 origin-top-right rtl:origin-top-left">
-                 <div className="w-12 h-12 md:w-20 md:h-20 bg-secondary/10 text-secondary rounded-full flex items-center justify-center">
-                   <span className="material-symbols-outlined text-2xl md:text-4xl" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+               <div className="absolute top-4 md:top-24 -right-2 md:-right-12 rtl:-right-auto rtl:right-auto rtl:-left-2 md:rtl:-left-12 bg-surface/95 backdrop-blur-2xl p-3 md:p-8 rounded-2xl md:rounded-[2rem] shadow-[0_15px_30px_rgba(0,0,0,0.1)] border border-outline-variant/30 flex items-center gap-2 md:gap-6 z-20 animate-[bounce_6s_ease-in-out_infinite_reverse] scale-[0.65] md:scale-100 origin-top-right rtl:origin-top-left">
+                 <div className="w-10 h-10 md:w-20 md:h-20 bg-secondary/10 text-secondary rounded-full flex items-center justify-center">
+                   <span className="material-symbols-outlined text-xl md:text-4xl" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                  </div>
                  <div>
-                   <span className="block font-black text-2xl md:text-4xl text-primary mb-0 md:mb-1">{slide.badgeText}</span>
-                   <span className="text-[10px] md:text-sm text-stone-500 font-bold uppercase tracking-widest">{slide.badgeSub}</span>
+                   <span className="block font-black text-xl md:text-4xl text-primary mb-0 md:mb-1">{slide.badgeText}</span>
+                   <span className="text-[9px] md:text-sm text-stone-500 font-bold uppercase tracking-widest">{slide.badgeSub}</span>
                  </div>
                </div>
              </div>
