@@ -186,12 +186,12 @@ export default async function Home({ params }: { params: Promise<{ lang: Locale 
       {/* Featured Products */}
       <section className="py-32 bg-surface">
         <div className="container mx-auto px-8 max-w-7xl">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-12 md:mb-16 gap-6">
-            <div className="space-y-4">
-              <h2 className="text-4xl md:text-5xl font-serif text-primary leading-tight">{dict.home.featured.title1} <br/> <span className="italic">{dict.home.featured.title2}</span></h2>
-              <div className="h-1 w-24 bg-secondary"></div>
+          <div className="flex flex-col items-center text-center md:text-start md:flex-row justify-between md:items-end mb-12 md:mb-16 gap-6">
+            <div className="space-y-4 flex flex-col items-center md:items-start">
+              <h2 className="text-4xl md:text-5xl font-serif text-primary leading-tight">{dict.home.featured.title1} <br className="hidden md:block" /> <span className="italic">{dict.home.featured.title2}</span></h2>
+              <div className="h-1 w-24 bg-secondary rounded-full"></div>
             </div>
-            <p className="text-on-surface-variant max-w-sm mb-2">{dict.home.featured.desc}</p>
+            <p className="text-on-surface-variant max-w-sm mb-2 text-center md:text-start leading-relaxed">{dict.home.featured.desc}</p>
           </div>
           <ScrollReveal delay={0.2} className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* Product Card 1 */}
