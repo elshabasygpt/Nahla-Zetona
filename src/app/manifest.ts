@@ -1,35 +1,33 @@
-import { MetadataRoute } from 'next';
+import { MetadataRoute } from 'next'
+import { prisma } from "@/lib/prisma"
 
-export default function manifest(): MetadataRoute.Manifest {
+export default async function manifest(): Promise<MetadataRoute.Manifest> {
+  let settings;
+  try {
+    settings = await (prisma as any).siteSettings.findFirst();
+  } catch (e) {
+    console.error("Failed to fetch settings for manifest", e);
+  }
+  
   return {
-    name: 'نحلة وزيتونة | Bee & Olive',
-    short_name: 'نحلة وزيتونة',
-    description: 'عسل طبيعي وزيت زيتون بكر ممتاز من أجود المصادر المصرية',
-    start_url: '/ar',
+    name: settings?.storeNameAr || 'نحلة وزيتونة',
+    short_name: settings?.storeNameEn || 'Bee&Olive',
+    description: 'Natural Honey & Premium Olive Oil Store',
+    start_url: '/',
     display: 'standalone',
     background_color: '#faf9f6',
-    theme_color: '#00511e',
-    orientation: 'portrait',
+    theme_color: settings?.primaryColor || '#00511e',
     icons: [
       {
-        src: '/favicon.ico',
-        sizes: 'any',
-        type: 'image/x-icon',
-      },
-      {
-        src: '/icon-192.png',
+        src: settings?.logoUrl || '/og-default.jpg',
         sizes: '192x192',
         type: 'image/png',
       },
       {
-        src: '/icon-512.png',
+        src: settings?.logoUrl || '/og-default.jpg',
         sizes: '512x512',
         type: 'image/png',
-        purpose: 'maskable',
       },
     ],
-    categories: ['shopping', 'food', 'lifestyle'],
-    lang: 'ar',
-    dir: 'rtl',
-  };
+  }
 }

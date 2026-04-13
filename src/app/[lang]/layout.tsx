@@ -58,6 +58,14 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
     title: { default: storeName, template: `%s | ${storeName}` },
     description,
     metadataBase: new URL(BASE_URL),
+    appleWebApp: {
+      capable: true,
+      title: storeName,
+      statusBarStyle: 'default',
+    },
+    formatDetection: {
+      telephone: false,
+    },
     alternates: {
       canonical: `${BASE_URL}/${lang}`,
       languages: {

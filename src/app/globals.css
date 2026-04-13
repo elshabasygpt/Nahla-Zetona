@@ -63,6 +63,18 @@
     background-color: var(--color-surface);
     color: var(--color-on-surface);
     font-family: var(--font-sans);
+    
+    /* Native App Behaviors */
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    user-select: none;
+    overscroll-behavior-y: none;
+  }
+  
+  /* Re-enable selection on input elements */
+  input, textarea {
+    user-select: auto;
+    -webkit-user-select: auto;
   }
 }
 
