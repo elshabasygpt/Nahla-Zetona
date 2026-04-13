@@ -4,12 +4,14 @@ import { usePathname, useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { useCartStore } from '@/store/useCartStore';
 import { useWishlistStore } from '@/store/useWishlistStore';
+import { useNotificationStore } from '@/store/useNotificationStore';
 
 export default function Navbar({ dict, lang, settings }: { dict: any, lang: string, settings?: any }) {
   const pathname = usePathname();
   const router = useRouter();
   const { items, openCart } = useCartStore();
   const { items: wishlistItems } = useWishlistStore();
+  const { items: notificationItems, openDrawer: openNotifications } = useNotificationStore();
   const [mounted, setMounted] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -58,6 +60,8 @@ export default function Navbar({ dict, lang, settings }: { dict: any, lang: stri
   
   const cartItemCount = mounted ? items.reduce((sum, item) => sum + item.quantity, 0) : 0;
   const wishlistItemCount = mounted ? wishlistItems.length : 0;
+  const unreadNotificationsCount = mounted ? notificationItems.filter(i => !i.isRead).length : 0;
+  
   const [animateCart, setAnimateCart] = useState(false);
 
   useEffect(() => {
@@ -87,9 +91,11 @@ export default function Navbar({ dict, lang, settings }: { dict: any, lang: stri
           
           {/* Mobile Only: Left Icon (Notifications) */}
           <div className="md:hidden w-1/3 flex justify-start">
-            <button className="w-10 h-10 flex items-center justify-center text-stone-600 active:scale-95 transition-transform relative bg-stone-50 rounded-full">
+            <button onClick={openNotifications} className="w-10 h-10 flex items-center justify-center text-stone-600 active:scale-95 transition-transform relative bg-stone-50 rounded-full">
               <span className="material-symbols-outlined text-[24px] font-light">notifications</span>
-              <span className="absolute top-2 right-2 w-2 h-2 bg-error rounded-full outline outline-2 outline-white"></span>
+              {unreadNotificationsCount > 0 && (
+                <span className="absolute top-2 right-2.5 w-2 h-2 bg-error rounded-full outline outline-2 outline-white"></span>
+              )}
             </button>
           </div>
 
@@ -155,6 +161,13 @@ export default function Navbar({ dict, lang, settings }: { dict: any, lang: stri
             <Link href={`/${lang}/login`} className="w-10 h-10 rounded-full bg-stone-100 flex items-center justify-center text-stone-600 hover:bg-stone-200 hover:text-primary transition-colors">
               <span className="material-symbols-outlined text-xl">person</span>
             </Link>
+
+            <button onClick={openNotifications} className="relative w-10 h-10 rounded-full bg-stone-100 flex items-center justify-center text-stone-600 hover:bg-stone-200 hover:text-primary transition-colors">
+              <span className="material-symbols-outlined text-xl">notifications</span>
+              {unreadNotificationsCount > 0 && (
+                <span className="absolute top-2 right-2.5 w-2 h-2 bg-error rounded-full outline outline-2 outline-white"></span>
+              )}
+            </button>
 
             <Link href={`/${lang}/wishlist`} className="relative w-10 h-10 rounded-full bg-stone-100 flex items-center justify-center text-stone-600 hover:bg-stone-200 hover:text-primary transition-colors">
               <span className="material-symbols-outlined text-xl">favorite</span>

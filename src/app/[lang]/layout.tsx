@@ -4,6 +4,7 @@ import "../globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import CartDrawer from "@/components/features/CartDrawer";
+import NotificationDrawer from "@/components/features/NotificationDrawer";
 import ContactWidget from "@/components/ui/ContactWidget";
 import MobileBottomNav from "@/components/layout/MobileBottomNav";
 import { getDictionary, Locale } from "@/lib/dictionary";
@@ -189,6 +190,7 @@ export default async function RootLayout({
       <body className="antialiased selection:bg-secondary-container selection:text-on-secondary-container pb-20 md:pb-0">
         <ToasterProvider />
         <CartDrawer dict={dict} lang={lang} />
+        <NotificationDrawer dict={dict} lang={lang} />
         <Navbar dict={dict} lang={lang} settings={settings} />
         {children}
         {settings?.whatsappNumber && <ContactWidget phoneNumber={settings.whatsappNumber} />}
