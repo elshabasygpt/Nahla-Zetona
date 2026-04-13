@@ -80,7 +80,7 @@ export default function Navbar({ dict, lang, settings }: { dict: any, lang: stri
   return (
     <div className="sticky top-0 left-0 right-0 z-50 pointer-events-none fade-in-up">
       <nav className="mx-auto w-full md:w-max md:max-w-[95vw] lg:max-w-7xl bg-white/95 dark:bg-stone-900/95 backdrop-blur-xl border-b md:border border-stone-200/50 dark:border-stone-800/50 md:rounded-full pointer-events-auto transition-all duration-500 shadow-sm md:shadow-[0_8px_30px_rgba(0,0,0,0.08)] md:mt-6">
-        <div className="flex justify-between items-center px-4 md:px-6 py-3.5 gap-4 xl:gap-8 overflow-x-hidden">
+        <div className="flex justify-center md:justify-between items-center px-4 md:px-6 py-3.5 gap-4 xl:gap-8 overflow-x-hidden w-full">
           
           {/* Logo & Brand */}
           <Link href={`/${lang}`} className="flex items-center gap-3 group shrink-0">
