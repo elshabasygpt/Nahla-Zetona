@@ -57,10 +57,6 @@ export default function NotificationDrawer({ dict, lang }: { dict: any, lang: st
 
           {/* Drawer */}
           <motion.div
-            initial={{ x: isRTL ? '100%' : '-100%' }} // Wait, Cart is from right, Notifications from left maybe?
-            // Actually, typical apps open notifications from right or bottom. We'll use the right side (same as cart)
-            // Wait, Cart uses: isRTL ? '-100%' : '100%'
-            // So let's match Cartesian logic:
             initial={{ x: isRTL ? '-100%' : '100%' }}
             animate={{ x: 0 }}
             exit={{ x: isRTL ? '-100%' : '100%' }}
