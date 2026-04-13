@@ -62,6 +62,39 @@ export default async function proxy(request: NextRequest) {
     const sessionCookie = request.cookies.get('session')?.value;
     
     let isAuthenticated = false;
+    let isAdmin = false;
+    if (sessionCookie) {
+      try {
+        const secretKey = process.env.JWT_SECRET || 'secret-key-too-long-to-guess';
+        const key = new TextEncoder().encode(secretKey);
+        const { payload } = await jwtVerify(sessionCookie, key);
+        isAuthenticated = true;
+        if (payload.role === 'ADMIN') isAdmin = true;
+      } catch (e) {}
+    }
+
+    if (!isAuthenticated || !isAdmin) {
+      if (!isLoginPage) {
+        // Redirect non-admins or guests to login page
+        const url = request.nextUrl.clone();
+        url.pathname = `/${localeToUse}/login`; // use generic login if not admin
+        return NextResponse.redirect(url);
+      }
+    } else {
+      if (isLoginPage) {
+        // Redirect away from login page if already logged in as admin
+        const url = request.nextUrl.clone();
+        url.pathname = `/${localeToUse}/admin`;
+        return NextResponse.redirect(url);
+      }
+    }
+  }
+
+  // 4. User Profile & Checkout Authentication Logic
+  const userMatch = /^\/(en|ar)\/(profile|checkout)(\/.*)?$/.exec(pathname);
+  if (userMatch) {
+    const sessionCookie = request.cookies.get('session')?.value;
+    let isAuthenticated = false;
     if (sessionCookie) {
       try {
         const secretKey = process.env.JWT_SECRET || 'secret-key-too-long-to-guess';
@@ -71,17 +104,10 @@ export default async function proxy(request: NextRequest) {
       } catch (e) {}
     }
 
-    if (!isAuthenticated && !isLoginPage) {
-      // Redirect to login page
+    if (!isAuthenticated) {
       const url = request.nextUrl.clone();
-      url.pathname = `/${localeToUse}/admin/login`;
-      return NextResponse.redirect(url);
-    }
-    
-    if (isAuthenticated && isLoginPage) {
-      // Redirect away from login page if already logged in
-      const url = request.nextUrl.clone();
-      url.pathname = `/${localeToUse}/admin`;
+      url.pathname = `/${localeToUse}/login`;
+      url.searchParams.set('callbackUrl', pathname);
       return NextResponse.redirect(url);
     }
   }
