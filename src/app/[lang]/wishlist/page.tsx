@@ -1,5 +1,4 @@
-import { getDictionary } from '../dictionaries';
-import { getSiteSettings } from '@/lib/settings';
+import { getDictionary } from '@/lib/dictionary';
 import WishlistClient from './WishlistClient';
 
 export default async function WishlistPage({
@@ -8,7 +7,6 @@ export default async function WishlistPage({
   params: { lang: string };
 }) {
   const dict = await getDictionary(lang as 'en' | 'ar');
-  const settings = await getSiteSettings();
 
   return (
     <div className="min-h-screen bg-stone-50/50">
