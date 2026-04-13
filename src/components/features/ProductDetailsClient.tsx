@@ -386,7 +386,7 @@ export default function ProductDetailsClient({
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <div className="flex flex-wrap p-1.5 bg-surface-container-lowest rounded-2xl mb-8 gap-1 shadow-sm border border-surface-container">
+          <div className="flex overflow-x-auto snap-x hide-scrollbar whitespace-nowrap p-1.5 bg-surface-container-lowest rounded-2xl mb-8 gap-1 shadow-sm border border-surface-container">
             {[
               { id: 'desc', label: isRtl ? 'الوصف' : 'Description', icon: 'info' },
               { id: 'benefits', label: isRtl ? 'الفوائد' : 'Benefits', icon: 'verified' },
