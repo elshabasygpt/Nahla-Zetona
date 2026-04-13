@@ -158,11 +158,11 @@ export default async function Home({ params }: { params: Promise<{ lang: Locale 
 
             return (
               <>
-                <div className="text-center mb-16 space-y-4">
+                <div className="text-center mb-12 md:mb-16 space-y-4">
                   <span className="text-secondary font-bold tracking-[0.2em] uppercase text-sm">{catHeader.subtitle}</span>
-                  <h2 className="text-5xl font-serif text-primary">{catHeader.title}</h2>
+                  <h2 className="text-4xl md:text-5xl font-serif text-primary">{catHeader.title}</h2>
                 </div>
-                <ScrollReveal delay={0.1} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <ScrollReveal delay={0.1} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 md:px-0">
                   {catItems.map((item: any, idx: number) => (
                     <Link href={`${lang === 'en' && !item.link.startsWith('/en') && !item.link.startsWith('/ar') ? '/en' : (lang === 'ar' && !item.link.startsWith('/ar') && !item.link.startsWith('/en') ? '/ar' : '')}${item.link}`} key={idx} className="group relative aspect-[3/4] rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col justify-end">
                       <img className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" src={item.img} alt={item.name} />
@@ -186,9 +186,9 @@ export default async function Home({ params }: { params: Promise<{ lang: Locale 
       {/* Featured Products */}
       <section className="py-32 bg-surface">
         <div className="container mx-auto px-8 max-w-7xl">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+          <div className="flex flex-col md:flex-row justify-between items-end mb-12 md:mb-16 gap-6">
             <div className="space-y-4">
-              <h2 className="text-5xl font-serif text-primary leading-tight">{dict.home.featured.title1} <br/> <span className="italic">{dict.home.featured.title2}</span></h2>
+              <h2 className="text-4xl md:text-5xl font-serif text-primary leading-tight">{dict.home.featured.title1} <br/> <span className="italic">{dict.home.featured.title2}</span></h2>
               <div className="h-1 w-24 bg-secondary"></div>
             </div>
             <p className="text-on-surface-variant max-w-sm mb-2">{dict.home.featured.desc}</p>

@@ -291,7 +291,7 @@ export default function CheckoutForm({ dict, lang, shippingZones }: { dict: any,
                 <span className="text-error font-normal text-xs">{lang === 'ar' ? '(إلزامي *)' : '(Required *)'}</span>
               </label>
               <div className="relative">
-                <input required name="phone" value={formData.phone} onChange={handleInputChange} type="tel" placeholder="01xxxxxxxxx" className={`w-full bg-surface-container-lowest border ${formData.phone ? (isPhoneValid ? 'border-primary focus:ring-1 focus:ring-primary' : 'border-error focus:ring-1 focus:ring-error') : 'border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary'} rounded-xl px-4 py-3 outline-none transition-all rtl:pl-10 ltr:pr-10`} />
+                <input required name="phone" dir="ltr" value={formData.phone} onChange={handleInputChange} type="tel" placeholder="01xxxxxxxxx" className={`w-full bg-surface-container-lowest border ${formData.phone ? (isPhoneValid ? 'border-primary focus:ring-1 focus:ring-primary' : 'border-error focus:ring-1 focus:ring-error') : 'border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary'} rounded-xl px-4 py-3 outline-none transition-all text-left`} />
                 {formData.phone && (
                   <span className={`material-symbols-outlined absolute right-3 rtl:right-auto rtl:left-3 top-1/2 -translate-y-1/2 ${isPhoneValid ? 'text-primary' : 'text-error'}`}>
                     {isPhoneValid ? 'check_circle' : 'error'}

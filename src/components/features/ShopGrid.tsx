@@ -40,13 +40,13 @@ export default function ShopGrid({ dict, products, lang }: { dict: any, products
       {/* Interactive Header */}
       <header className="pt-8 pb-8 md:pt-12 mb-12">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-outline-variant pb-8">
-          <div className="flex-1">
-            <h1 className="text-5xl md:text-7xl font-serif text-primary tracking-tight mb-4">{dict.shop.title}</h1>
+          <div className="flex-1 min-w-0">
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-serif text-primary tracking-tight mb-4 leading-tight">{dict.shop.title}</h1>
             <p className="text-on-surface-variant max-w-md font-body leading-relaxed mb-6">
               {dict.shop.desc}
             </p>
             {/* Filter Pills */}
-            <div className="flex flex-wrap items-center gap-3">
+            <div className="flex items-center gap-3 overflow-x-auto snap-x hide-scrollbar pb-2 -mx-4 px-4 md:mx-0 md:px-0">
               {categories.map(cat => (
                 <button 
                   key={cat.id}
@@ -190,7 +190,7 @@ function ProductCard({ p, dict, lang }: { p: any, dict: any, lang: string }) {
             </span>
           </div>
         )}
-        <div className="relative w-full h-full">
+        <Link href={`/${lang}/shop/${p.slug}`} className="relative block w-full h-full cursor-pointer">
           <Image
             src={p.img || '/og-default.jpg'}
             alt={p.name}
@@ -199,12 +199,10 @@ function ProductCard({ p, dict, lang }: { p: any, dict: any, lang: string }) {
             className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
             priority={false}
           />
-        </div>
-        <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-[2px]">
-          <Link href={`/${lang}/shop/${p.slug}`}>
-            <button className="bg-white text-primary px-8 py-3.5 rounded-full font-bold shadow-2xl translate-y-6 group-hover:translate-y-0 transition-all duration-300 hover:scale-105">{dict.common.quickView}</button>
-          </Link>
-        </div>
+          <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-[2px] hidden md:flex">
+             <button className="bg-white text-primary px-8 py-3.5 rounded-full font-bold shadow-2xl translate-y-6 group-hover:translate-y-0 transition-all duration-300 hover:scale-105 pointer-events-none">{dict.common.quickView}</button>
+          </div>
+        </Link>
       </div>
       
       <div className="flex-1 flex flex-col px-2">
