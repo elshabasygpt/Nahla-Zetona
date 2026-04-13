@@ -25,6 +25,7 @@ interface NotificationStore {
   markAllAsRead: () => void;
   clearAll: () => void;
   initializeSystem: () => void;
+  setDbItems: (dbNotifications: any[]) => void;
 }
 
 const SEED_NOTIFICATIONS: AppNotification[] = [
@@ -81,7 +82,24 @@ export const useNotificationStore = create<NotificationStore>()(
         if (get().items.length === 0) {
           set({ items: SEED_NOTIFICATIONS });
         }
-      }
+      },
+      setDbItems: (dbNotifications: any[]) => set((state) => {
+        // Merge DB notifications into state avoiding duplicates based on ID
+        const existingIds = new Set(state.items.map(i => i.id));
+        const newNotifs = dbNotifications.filter(n => !existingIds.has(n.id)).map(n => ({
+          id: n.id,
+          titleAr: n.title,
+          titleEn: n.title,
+          messageAr: n.message,
+          messageEn: n.message,
+          date: n.createdAt,
+          isRead: n.isRead,
+          type: 'order' as any,
+          link: n.link
+        }));
+
+        return { items: [...newNotifs, ...state.items] };
+      })
     }),
     {
       name: 'bee-olive-notifications',

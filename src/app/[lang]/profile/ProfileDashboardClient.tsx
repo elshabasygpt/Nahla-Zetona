@@ -32,12 +32,15 @@ type User = {
 };
 
 export default function ProfileDashboardClient({ user, lang, dict }: { user: User, lang: string, dict: any }) {
-  const [activeTab, setActiveTab] = useState<'overview' | 'orders' | 'settings'>('overview');
+  const [activeTab, setActiveTab] = useState<'overview' | 'orders' | 'wishlist' | 'settings'>('overview');
   const [isUpdating, setIsUpdating] = useState(false);
   const [isUpdatingPassword, setIsUpdatingPassword] = useState(false);
   const [selectedOrder, setSelectedOrder] = useState<Order | null>(null);
 
   const isRTL = lang === 'ar';
+  
+  // Import the global wishlist items from zustand store
+  const { items: wishlistItems, toggleItem } = require('@/store/useWishlistStore').useWishlistStore();
 
   const t = dict?.auth || {
     welcome: 'مرحباً',
@@ -133,6 +136,14 @@ export default function ProfileDashboardClient({ user, lang, dict }: { user: Use
             <span className="material-symbols-outlined">shopping_bag</span>
             {t.myOrders}
             <span className={`mr-auto px-2 py-0.5 rounded-full text-xs ${activeTab === 'orders' ? 'bg-white/20 text-white' : 'bg-stone-200 text-stone-600'}`}>{user.orders.length}</span>
+          </button>
+          <button 
+            onClick={() => { setActiveTab('wishlist'); setSelectedOrder(null); }}
+            className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl font-bold transition-all ${activeTab === 'wishlist' ? 'bg-primary text-white shadow-md shadow-primary/20' : 'text-stone-600 hover:bg-stone-50'}`}
+          >
+            <span className="material-symbols-outlined">favorite</span>
+            {isRTL ? "المفضلة" : "Wishlist"}
+            <span className={`mr-auto px-2 py-0.5 rounded-full text-xs ${activeTab === 'wishlist' ? 'bg-white/20 text-white' : 'bg-stone-200 text-stone-600'}`}>{wishlistItems?.length || 0}</span>
           </button>
           <button 
             onClick={() => { setActiveTab('settings'); setSelectedOrder(null); }}
@@ -320,6 +331,51 @@ export default function ProfileDashboardClient({ user, lang, dict }: { user: Use
                     ))}
                   </div>
                 )}
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* WISHLIST TAB */}
+        {activeTab === 'wishlist' && (
+          <div className="bg-white p-6 rounded-3xl border border-stone-100 shadow-sm animate-in fade-in zoom-in-95 duration-300">
+            <h2 className="text-2xl font-serif text-primary mb-6 flex items-center gap-2">
+              <span className="material-symbols-outlined text-error">favorite</span>
+              {isRTL ? "المفضلة" : "My Wishlist"}
+            </h2>
+            
+            {wishlistItems && wishlistItems.length > 0 ? (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {wishlistItems.map((item: any) => (
+                  <div key={item.slug} className="flex gap-4 p-4 border border-stone-100 rounded-2xl hover:border-primary/30 transition-colors group">
+                    <div className="w-24 h-24 bg-stone-50 rounded-xl overflow-hidden shadow-sm shrink-0 relative">
+                      <img src={item.img} alt="Product" className="w-full h-full object-cover" />
+                      <button 
+                        onClick={() => toggleItem(item)}
+                        className="absolute top-1 right-1 w-7 h-7 bg-white/90 text-error rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
+                      >
+                        <span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>favorite</span>
+                      </button>
+                    </div>
+                    <div className="flex flex-col justify-between py-1">
+                      <h3 className="font-bold text-stone-800 line-clamp-2">{isRTL ? item.nameAr : item.nameEn}</h3>
+                      <div className="mt-auto flex items-center gap-4">
+                        <p className="font-bold text-primary">{item.price} {dict?.common?.currency}</p>
+                        <Link href={`/${lang}/product/${item.slug}`} className="text-primary text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity hover:underline">
+                          {isRTL ? "عرض المنتج" : "View Details"}
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <div className="text-center py-16">
+                <span className="material-symbols-outlined text-6xl text-stone-200 mb-4 block" style={{ fontVariationSettings: "'FILL' 0" }}>favorite</span>
+                <p className="text-stone-500 mb-6">{isRTL ? "قائمة المفضلة لديك فارغة حالياً." : "Your wishlist is currently empty."}</p>
+                <Link href={`/${lang}/shop`} className="text-white font-bold bg-primary px-8 py-3 rounded-full hover:bg-primary/90 transition-colors">
+                  {t.startShopping}
+                </Link>
               </div>
             )}
           </div>

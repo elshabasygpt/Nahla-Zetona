@@ -39,10 +39,11 @@ model Customer {
   role      String   @default("USER") // USER or ADMIN
   phone     String?
   firstName String
-  lastName  String
-  orders    Order[]
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  lastName      String
+  orders        Order[]
+  notifications Notification[]
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
 }
 
 model Order {
@@ -163,3 +164,13 @@ model Review {
 }
 
 
+model Notification {
+  id         Int      @id @default(autoincrement())
+  customerId Int
+  customer   Customer @relation(fields: [customerId], references: [id])
+  title      String
+  message    String
+  isRead     Boolean  @default(false)
+  link       String?  @default("/profile")
+  createdAt  DateTime @default(now())
+}

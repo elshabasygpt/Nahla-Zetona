@@ -76,6 +76,16 @@ export async function POST(req: Request) {
         }
       });
 
+      // Create Notification
+      await (tx as any).notification.create({
+        data: {
+          customerId: customerId,
+          title: lang === 'ar' ? 'طلب جديد' : 'New Order',
+          message: lang === 'ar' ? `تم استلام طلبك رقم ${orderNumber} بنجاح.` : `Your order ${orderNumber} was received successfully.`,
+          link: `/${lang}/profile`,
+        }
+      });
+
       return newOrder;
     });
 
