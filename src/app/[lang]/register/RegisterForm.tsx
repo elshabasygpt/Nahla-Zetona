@@ -11,7 +11,7 @@ export default function RegisterForm({ dict, lang }: { dict: any, lang: string }
   const [isLoading, setIsLoading] = useState(false);
   const isRTL = lang === 'ar';
 
-  const t = dict.auth || {
+  const t = (dict as any).auth || {
     title: 'إنشاء حساب جديد',
     subtitle: 'انضم إلى عائلة نحلة وزيتونة للاستمتاع بتجربة تسوق فريدة',
     firstName: 'الاسم الأول',

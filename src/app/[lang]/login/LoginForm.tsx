@@ -11,7 +11,7 @@ export default function LoginForm({ dict, lang }: { dict: any, lang: string }) {
   const [isLoading, setIsLoading] = useState(false);
   const isRTL = lang === 'ar';
 
-  const t = dict.auth || {
+  const t = (dict as any).auth || {
     title: 'تسجيل الدخول',
     subtitle: 'أهلاً بك مجدداً في نحلة وزيتونة',
     email: 'البريد الإلكتروني',

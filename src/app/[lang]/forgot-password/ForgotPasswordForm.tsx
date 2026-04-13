@@ -12,7 +12,7 @@ export default function ForgotPasswordForm({ dict, lang }: { dict: any, lang: st
   const [isSent, setIsSent] = useState(false);
   const isRTL = lang === 'ar';
 
-  const t = dict.auth || {
+  const t = (dict as any).auth || {
     title: 'استعادة كلمة المرور',
     subtitle: 'أدخل بريدك الإلكتروني وسنرسل لك رابطاً لإعادة التعيين',
     email: 'البريد الإلكتروني',

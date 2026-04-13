@@ -29,7 +29,7 @@ export default async function ProfilePage({ params }: { params: Promise<{ lang: 
     redirect(`/${lang}/login`);
   }
 
-  const t = dict.auth || {
+  const t = (dict as any).auth || {
     profileTitle: 'لوحة التحكم',
     welcome: 'مرحباً',
     personalInfo: 'المعلومات الشخصية',
