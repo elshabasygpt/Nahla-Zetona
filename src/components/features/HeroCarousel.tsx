@@ -53,29 +53,29 @@ export default function HeroCarousel({ dict, lang }: { dict: any, lang: string }
                 <span className="font-bold text-primary tracking-wide">{slide.subtitle}</span>
               </div>
               
-              <h1 className="text-7xl md:text-8xl lg:text-[7rem] xl:text-[8rem] font-serif text-primary leading-[1.1] tracking-tight">
+              <h1 className="text-5xl md:text-7xl lg:text-[7rem] xl:text-[8rem] font-serif text-primary leading-[1.15] tracking-tight">
                 {slide.title1} <br/> 
-                <div className="flex items-center gap-6 mt-4">
-                   <div className="h-2 w-24 bg-secondary hidden sm:block rounded-full"></div>
+                <div className="flex items-center gap-4 md:gap-6 mt-2 md:mt-4">
+                   <div className="h-1.5 w-16 md:h-2 md:w-24 bg-secondary hidden sm:block rounded-full"></div>
                    <span className="italic text-secondary font-light">{slide.title2}</span>
                 </div>
               </h1>
             </div>
             
-            <p className="text-2xl text-stone-600 font-body max-w-xl leading-relaxed animate-hero-text" style={{ animationDelay: '100ms' }}>
+            <p className="text-lg md:text-2xl text-stone-600 font-body max-w-xl leading-relaxed animate-hero-text" style={{ animationDelay: '100ms' }}>
               {slide.desc}
             </p>
             
-            <div className="flex flex-wrap items-center gap-8 pt-6 animate-hero-text" style={{ animationDelay: '200ms' }}>
-              <Link href={`/${lang}/shop`}>
-                <button className="group relative bg-primary text-on-primary px-12 py-6 rounded-full font-bold text-xl overflow-hidden shadow-2xl hover:shadow-primary/30 transition-all flex items-center gap-4 active:scale-95">
+            <div className="flex flex-col sm:flex-row flex-wrap items-center sm:items-start gap-6 sm:gap-8 pt-4 sm:pt-6 animate-hero-text" style={{ animationDelay: '200ms' }}>
+              <Link href={`/${lang}/shop`} className="w-full sm:w-auto">
+                <button className="w-full sm:w-auto group relative bg-primary text-on-primary px-8 py-4 md:px-12 md:py-6 rounded-full font-bold text-lg md:text-xl overflow-hidden shadow-2xl hover:shadow-primary/30 transition-all flex items-center justify-center gap-4 active:scale-95">
                   <span>{dict.btnShop}</span>
-                  <span className="material-symbols-outlined rtl:-scale-x-100 group-hover:translate-x-2 rtl:group-hover:-translate-x-2 transition-transform text-2xl">arrow_forward</span>
+                  <span className="material-symbols-outlined rtl:-scale-x-100 group-hover:translate-x-2 rtl:group-hover:-translate-x-2 transition-transform text-xl md:text-2xl">arrow_forward</span>
                 </button>
               </Link>
               <Link href={`/${lang}/our-story`}>
-                <button className="text-stone-600 font-bold text-xl hover:text-primary transition-colors flex items-center gap-3 group">
-                  <span className="border-b-2 border-transparent group-hover:border-primary pb-2 transition-all">{dict.btnProcess}</span>
+                <button className="text-stone-600 font-bold text-lg md:text-xl hover:text-primary transition-colors flex items-center gap-3 group px-4 py-2">
+                  <span className="border-b-2 border-transparent group-hover:border-primary pb-1 md:pb-2 transition-all">{dict.btnProcess}</span>
                 </button>
               </Link>
             </div>
@@ -99,10 +99,10 @@ export default function HeroCarousel({ dict, lang }: { dict: any, lang: string }
             </div>
           </div>
 
-          <div className="lg:w-1/2 w-full relative h-[600px] xl:h-[800px] flex items-center justify-center" key={`img-${currentSlide}`}>
-             <div className="relative w-full h-full aspect-square max-w-[800px] mx-auto z-10 pt-10 lg:pt-0 animate-hero-img">
+          <div className="lg:w-1/2 w-full relative h-[400px] sm:h-[500px] md:h-[600px] xl:h-[800px] flex items-center justify-center -mt-8 md:mt-0" key={`img-${currentSlide}`}>
+             <div className="relative w-full h-[90%] md:h-full aspect-square max-w-[800px] mx-auto z-10 pt-4 md:pt-10 lg:pt-0 animate-hero-img">
                {/* Main Image */}
-               <div className="absolute inset-0 rounded-[4rem] xl:rounded-[6rem] overflow-hidden shadow-[0_30px_60px_rgba(0,0,0,0.15)] border-[12px] border-surface-container-lowest transition-transform duration-700 bg-surface">
+               <div className="absolute inset-0 rounded-[2.5rem] md:rounded-[4rem] xl:rounded-[6rem] overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.1)] md:shadow-[0_30px_60px_rgba(0,0,0,0.15)] border-[8px] md:border-[12px] border-surface-container-lowest transition-transform duration-700 bg-surface">
                  <img 
                    className="w-full h-full object-cover" 
                    src={slide.mainImage}
@@ -121,13 +121,13 @@ export default function HeroCarousel({ dict, lang }: { dict: any, lang: string }
                </div>
 
                {/* Floating element 2: Trust Card */}
-               <div className="absolute top-24 -right-12 rtl:-right-auto rtl:-left-12 bg-surface/95 backdrop-blur-2xl p-8 rounded-[2rem] shadow-[0_20px_40px_rgba(0,0,0,0.15)] border border-outline-variant/30 flex items-center gap-6 z-20 animate-[bounce_6s_ease-in-out_infinite_reverse]">
-                 <div className="w-20 h-20 bg-secondary/10 text-secondary rounded-full flex items-center justify-center">
-                   <span className="material-symbols-outlined text-4xl" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+               <div className="absolute top-8 md:top-24 -right-4 md:-right-12 rtl:-right-auto rtl:right-auto rtl:-left-4 md:rtl:-left-12 bg-surface/95 backdrop-blur-2xl p-4 md:p-8 rounded-2xl md:rounded-[2rem] shadow-[0_15px_30px_rgba(0,0,0,0.1)] border border-outline-variant/30 flex items-center gap-3 md:gap-6 z-20 animate-[bounce_6s_ease-in-out_infinite_reverse] scale-75 md:scale-100 origin-top-right rtl:origin-top-left">
+                 <div className="w-12 h-12 md:w-20 md:h-20 bg-secondary/10 text-secondary rounded-full flex items-center justify-center">
+                   <span className="material-symbols-outlined text-2xl md:text-4xl" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                  </div>
                  <div>
-                   <span className="block font-black text-4xl text-primary mb-1">{slide.badgeText}</span>
-                   <span className="text-sm text-stone-500 font-bold uppercase tracking-widest">{slide.badgeSub}</span>
+                   <span className="block font-black text-2xl md:text-4xl text-primary mb-0 md:mb-1">{slide.badgeText}</span>
+                   <span className="text-[10px] md:text-sm text-stone-500 font-bold uppercase tracking-widest">{slide.badgeSub}</span>
                  </div>
                </div>
              </div>
