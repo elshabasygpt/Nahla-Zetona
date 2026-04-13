@@ -9,6 +9,7 @@ import { useRouter } from 'next/navigation';
 import { useCartStore } from "@/store/useCartStore";
 import type { Product } from '@prisma/client';
 import { trackViewContent, trackAddToCart, trackInitiateCheckout } from '@/lib/pixelEvents';
+import FavoriteButton from '../ui/FavoriteButton';
 
 export default function ProductDetailsClient({ 
   product, 
@@ -137,6 +138,10 @@ export default function ProductDetailsClient({
                   </div>
                 </div>
               )}
+              
+              <div className={`absolute top-6 ${isRtl ? 'left-6' : 'right-6'} z-10`}>
+                <FavoriteButton product={{ slug: product.slug, nameAr: product.nameAr, nameEn: product.nameEn, price: currentPrice, originalPrice: currentOriginalPrice || undefined, img: product.img || '/og-default.jpg' }} className="w-12 h-12 shadow-md hover:scale-110" />
+              </div>
               
               {product.img ? (
                 <motion.div

@@ -4,6 +4,7 @@ import { getDictionary, Locale } from "@/lib/dictionary";
 import NewsletterForm from "@/components/features/NewsletterForm";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import AddToCartButton from "@/components/features/AddToCartButton";
+import FavoriteButton from "@/components/ui/FavoriteButton";
 import HeroCarousel from "@/components/features/HeroCarousel";
 import { prisma } from "@/lib/prisma";
 import type { Metadata } from "next";
@@ -201,6 +202,9 @@ export default async function Home({ params }: { params: Promise<{ lang: Locale 
                 <div className="absolute top-6 left-6 rtl:left-auto rtl:right-6">
                   <span className="bg-secondary-container text-tertiary px-4 py-1.5 rounded-xl text-xs font-bold uppercase tracking-widest shadow-sm">{dict.home.featured.product1.badge}</span>
                 </div>
+                <div className="absolute top-6 right-6 rtl:right-auto rtl:left-6 z-10">
+                  <FavoriteButton product={{ slug: 'featured-1', nameAr: dict.home.featured.product1.name, nameEn: dict.home.featured.product1.name, price: 420, img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDH-1V6nvnTXR0SsevM8g243tXqbdq3yxifVJ000d_TsyUheVSPt1JBEeSUEjeNdtXwiykYtvPLsmVKBjFVOK_Fxe-Oguv2hVpkUJ4A4le6GoOeLLOSc-6weThcvSQJcjzq8ss450nze4WcIFt9CLISobDA3jB8A22sC3ejvuUSt9Xz0ZfypsINUaKB2bvgWEtTMhZvOnjnRUQM8VzZRsfhup_cqe7a29lXt7ZMFcUJhY3oXO8RyY2Wy2zbMFOQfhVzZpiOhEpJujU' }} />
+                </div>
               </div>
               <div className="p-8 space-y-4">
                 <div className="flex justify-between items-start">
@@ -227,6 +231,9 @@ export default async function Home({ params }: { params: Promise<{ lang: Locale 
                 <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUSFyP3qm3XYOBVyi6j-y9aebTDNNYSu8VtPN0dQO64ym0IRHr2DqXLlAnyE8ye_gMLDXyRH8UqosAU7bBVIMbC2MU_-tkyYQ29AxH0PWpGe44AoQyA01P7fuMOSTk7rseXof5bCu4lYcii1YHhzaC-QsC-QHEKPXrHFvLaxkDgdUTpucBA-JhFSmU6TVN7nIkD4seGUQwCEn-jHUFjCsRntPYtThhrtKfBcnN7LLSm8QJa_vEMRmkeZYCHjglAkejXRQJmFQAsTg" alt="Extra Virgin Olive Oil" />
                 <div className="absolute top-6 left-6 rtl:left-auto rtl:right-6">
                   <span className="bg-secondary-container text-tertiary px-4 py-1.5 rounded-xl text-xs font-bold uppercase tracking-widest shadow-sm">{dict.home.featured.product2.badge}</span>
+                </div>
+                <div className="absolute top-6 right-6 rtl:right-auto rtl:left-6 z-10">
+                  <FavoriteButton product={{ slug: 'featured-2', nameAr: dict.home.featured.product2.name, nameEn: dict.home.featured.product2.name, price: 350, img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAUSFyP3qm3XYOBVyi6j-y9aebTDNNYSu8VtPN0dQO64ym0IRHr2DqXLlAnyE8ye_gMLDXyRH8UqosAU7bBVIMbC2MU_-tkyYQ29AxH0PWpGe44AoQyA01P7fuMOSTk7rseXof5bCu4lYcii1YHhzaC-QsC-QHEKPXrHFvLaxkDgdUTpucBA-JhFSmU6TVN7nIkD4seGUQwCEn-jHUFjCsRntPYtThhrtKfBcnN7LLSm8QJa_vEMRmkeZYCHjglAkejXRQJmFQAsTg' }} />
                 </div>
               </div>
               <div className="p-8 space-y-4">

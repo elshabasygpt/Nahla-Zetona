@@ -3,11 +3,13 @@ import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { useCartStore } from '@/store/useCartStore';
+import { useWishlistStore } from '@/store/useWishlistStore';
 
 export default function Navbar({ dict, lang, settings }: { dict: any, lang: string, settings?: any }) {
   const pathname = usePathname();
   const router = useRouter();
   const { items, openCart } = useCartStore();
+  const { items: wishlistItems } = useWishlistStore();
   const [mounted, setMounted] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -55,6 +57,7 @@ export default function Navbar({ dict, lang, settings }: { dict: any, lang: stri
   if (pathname.includes('/admin')) return null;
   
   const cartItemCount = mounted ? items.reduce((sum, item) => sum + item.quantity, 0) : 0;
+  const wishlistItemCount = mounted ? wishlistItems.length : 0;
   const [animateCart, setAnimateCart] = useState(false);
 
   useEffect(() => {
@@ -113,8 +116,13 @@ export default function Navbar({ dict, lang, settings }: { dict: any, lang: stri
 
           {/* Mobile Only: Right Icon (Favorites) */}
           <div className="md:hidden w-1/3 flex justify-end">
-            <Link href={`/${lang}/shop`} className="w-10 h-10 flex items-center justify-center text-stone-600 active:scale-95 transition-transform bg-stone-50 rounded-full">
+            <Link href={`/${lang}/wishlist`} className="w-10 h-10 flex items-center justify-center text-stone-600 active:scale-95 transition-transform bg-stone-50 rounded-full relative">
               <span className="material-symbols-outlined text-[24px] font-light">favorite</span>
+              {wishlistItemCount > 0 && (
+                <span className="absolute -top-1 -right-1 bg-error text-white text-[10px] min-w-[20px] h-5 px-1 rounded-full flex items-center justify-center font-black border-2 border-white shadow-sm">
+                  {wishlistItemCount}
+                </span>
+              )}
             </Link>
           </div>
 
@@ -146,6 +154,15 @@ export default function Navbar({ dict, lang, settings }: { dict: any, lang: stri
             
             <Link href={`/${lang}/login`} className="w-10 h-10 rounded-full bg-stone-100 flex items-center justify-center text-stone-600 hover:bg-stone-200 hover:text-primary transition-colors">
               <span className="material-symbols-outlined text-xl">person</span>
+            </Link>
+
+            <Link href={`/${lang}/wishlist`} className="relative w-10 h-10 rounded-full bg-stone-100 flex items-center justify-center text-stone-600 hover:bg-stone-200 hover:text-primary transition-colors">
+              <span className="material-symbols-outlined text-xl">favorite</span>
+              {wishlistItemCount > 0 && (
+                <span className="absolute -top-1 -right-1 bg-error text-white text-[10px] min-w-[20px] h-5 px-1 rounded-full flex items-center justify-center font-black border-2 border-white shadow-sm">
+                  {wishlistItemCount}
+                </span>
+              )}
             </Link>
 
             <button onClick={openCart} className={`relative w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all active:scale-95 group ${animateCart ? 'scale-110 bg-primary text-white shadow-lg shadow-primary/20' : ''}`}>

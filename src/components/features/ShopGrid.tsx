@@ -5,6 +5,7 @@ import Image from "next/image";
 import AddToCartButton from "./AddToCartButton";
 import { useRouter } from "next/navigation";
 import { useCartStore } from "@/store/useCartStore";
+import FavoriteButton from '../ui/FavoriteButton';
 import { trackAddToCart, trackInitiateCheckout } from "@/lib/pixelEvents";
 
 export default function ShopGrid({ dict, products, lang }: { dict: any, products: any[], lang: string }) {
@@ -203,6 +204,9 @@ function ProductCard({ p, dict, lang }: { p: any, dict: any, lang: string }) {
              <button className="bg-white text-primary px-8 py-3.5 rounded-full font-bold shadow-2xl translate-y-6 group-hover:translate-y-0 transition-all duration-300 hover:scale-105 pointer-events-none">{dict.common.quickView}</button>
           </div>
         </Link>
+        <div className="absolute bottom-4 right-4 rtl:right-auto rtl:left-4 z-20">
+          <FavoriteButton product={{ slug: p.slug, nameAr: p.name, nameEn: p.name, price: currentPrice, originalPrice: currentOriginalPrice || undefined, img: p.img || '/og-default.jpg' }} />
+        </div>
       </div>
       
       <div className="flex-1 flex flex-col px-2">
