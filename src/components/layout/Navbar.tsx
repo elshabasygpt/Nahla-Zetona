@@ -80,26 +80,43 @@ export default function Navbar({ dict, lang, settings }: { dict: any, lang: stri
   return (
     <div className="sticky top-0 left-0 right-0 z-50 pointer-events-none fade-in-up">
       <nav className="mx-auto w-full md:w-max md:max-w-[95vw] lg:max-w-7xl bg-white/95 dark:bg-stone-900/95 backdrop-blur-xl border-b md:border border-stone-200/50 dark:border-stone-800/50 md:rounded-full pointer-events-auto transition-all duration-500 shadow-sm md:shadow-[0_8px_30px_rgba(0,0,0,0.08)] md:mt-6">
-        <div className="flex justify-center md:justify-between items-center px-4 md:px-6 py-3.5 gap-4 xl:gap-8 overflow-x-hidden w-full">
+        <div className="flex justify-between items-center px-4 md:px-6 py-3.5 gap-4 xl:gap-8 overflow-x-hidden w-full relative">
           
+          {/* Mobile Only: Left Icon (Notifications) */}
+          <div className="md:hidden w-1/3 flex justify-start">
+            <button className="w-10 h-10 flex items-center justify-center text-stone-600 active:scale-95 transition-transform relative bg-stone-50 rounded-full">
+              <span className="material-symbols-outlined text-[24px] font-light">notifications</span>
+              <span className="absolute top-2 right-2 w-2 h-2 bg-error rounded-full outline outline-2 outline-white"></span>
+            </button>
+          </div>
+
           {/* Logo & Brand */}
-          <Link href={`/${lang}`} className="flex items-center gap-3 group shrink-0">
-            <div className="relative w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full text-primary group-hover:scale-105 transition-transform overflow-hidden">
-              {settings?.logoUrl ? (
-                <img src={settings.logoUrl} alt="Logo" className="w-full h-full object-cover" />
-              ) : (
-                /* High Quality Inline SVG Logo fallback */
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
-                   <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" opacity=".3"/>
-                   <path d="M14 10h-4v4h4v-4zm-2 2h-2v2h2v-2zm4-6H8v2h8V6zm0 10H8v2h8v-2z" fill="#d97706"/>
-                   <path d="M6 10h2v4H6zM16 10h2v4h-2z" fill="#00511e"/>
-                </svg>
-              )}
-            </div>
-            <span className={`text-xl relative top-0.5 ${lang === 'en' ? 'font-serif italic' : 'font-bold'} text-primary tracking-tight hidden lg:block`}>
-              {settings ? (lang === 'ar' ? settings.storeNameAr : settings.storeNameEn) : (dict.nav.brand || dict.common.brand)}
-            </span>
-          </Link>
+          <div className="md:w-auto w-1/3 flex justify-center md:justify-start">
+            <Link href={`/${lang}`} className="flex items-center gap-3 group shrink-0">
+              <div className="relative w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full text-primary group-hover:scale-105 transition-transform overflow-hidden">
+                {settings?.logoUrl ? (
+                  <img src={settings.logoUrl} alt="Logo" className="w-full h-full object-cover" />
+                ) : (
+                  /* High Quality Inline SVG Logo fallback */
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" opacity=".3"/>
+                     <path d="M14 10h-4v4h4v-4zm-2 2h-2v2h2v-2zm4-6H8v2h8V6zm0 10H8v2h8v-2z" fill="#d97706"/>
+                     <path d="M6 10h2v4H6zM16 10h2v4h-2z" fill="#00511e"/>
+                  </svg>
+                )}
+              </div>
+              <span className={`text-xl relative top-0.5 ${lang === 'en' ? 'font-serif italic' : 'font-bold'} text-primary tracking-tight hidden lg:block`}>
+                {settings ? (lang === 'ar' ? settings.storeNameAr : settings.storeNameEn) : (dict.nav.brand || dict.common.brand)}
+              </span>
+            </Link>
+          </div>
+
+          {/* Mobile Only: Right Icon (Favorites) */}
+          <div className="md:hidden w-1/3 flex justify-end">
+            <Link href={`/${lang}/shop`} className="w-10 h-10 flex items-center justify-center text-stone-600 active:scale-95 transition-transform bg-stone-50 rounded-full">
+              <span className="material-symbols-outlined text-[24px] font-light">favorite</span>
+            </Link>
+          </div>
 
           {/* Desktop Links (Visible on XL only to prevent overlap) */}
           <div className="hidden xl:flex items-center gap-1 text-[15px] bg-stone-100/80 p-1.5 rounded-full border border-stone-200/80 shrink-0">
