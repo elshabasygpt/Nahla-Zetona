@@ -111,43 +111,44 @@ export default function Navbar({ dict, lang, settings }: { dict: any, lang: stri
             <Link href={`/${lang}/contact`} className={getLinkClasses('/contact')}>{lang === 'ar' ? 'تواصل معنا' : 'Contact Us'}</Link>
           </div>
 
-          {/* Actions */}
-          <div className="flex items-center gap-1 md:gap-2 shrink-0">
+          {/* Actions - Desktop & Tablet Only (hidden on Mobile) */}
+          <div className="hidden md:flex items-center gap-2 shrink-0">
             {/* Expanding Search Container */}
             <div className="relative">
               <button 
                 onClick={() => setIsSearchOpen(!isSearchOpen)}
-                className={`w-9 h-9 md:w-10 md:h-10 rounded-full flex items-center justify-center transition-colors z-50 relative ${isSearchOpen ? 'bg-primary text-white' : 'text-stone-500 hover:bg-stone-100 hover:text-primary bg-transparent'}`}
+                className={`w-10 h-10 rounded-full flex items-center justify-center transition-colors z-50 relative ${isSearchOpen ? 'bg-primary text-white' : 'text-stone-500 hover:bg-stone-100 hover:text-primary bg-transparent'}`}
               >
-                <span className="material-symbols-outlined text-lg md:text-xl">{isSearchOpen ? 'close' : 'search'}</span>
+                <span className="material-symbols-outlined text-xl">{isSearchOpen ? 'close' : 'search'}</span>
               </button>
             </div>
             
-            <a href={getSwitchLang() + (rawPath === '/' ? '' : rawPath)} className="text-xs font-bold border-2 border-stone-200 text-stone-600 rounded-full px-3 py-1.5 hover:bg-stone-100 transition-colors hidden sm:block">
+            <a href={getSwitchLang() + (rawPath === '/' ? '' : rawPath)} className="text-xs font-bold border-2 border-stone-200 text-stone-600 rounded-full px-3 py-1.5 hover:bg-stone-100 transition-colors">
               {lang === 'ar' ? 'EN' : 'عربي'}
             </a>
             
-            <Link href={`/${lang}/login`} className="w-9 h-9 md:w-10 md:h-10 rounded-full bg-stone-100 flex items-center justify-center text-stone-600 hover:bg-stone-200 hover:text-primary transition-colors">
-              <span className="material-symbols-outlined text-lg md:text-xl">person</span>
+            <Link href={`/${lang}/login`} className="w-10 h-10 rounded-full bg-stone-100 flex items-center justify-center text-stone-600 hover:bg-stone-200 hover:text-primary transition-colors">
+              <span className="material-symbols-outlined text-xl">person</span>
             </Link>
 
-            <button onClick={openCart} className={`relative w-9 h-9 md:w-10 md:h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all active:scale-95 group ${animateCart ? 'scale-110 bg-primary text-white shadow-lg shadow-primary/20' : ''}`}>
-              <span className="material-symbols-outlined text-lg md:text-xl">shopping_bag</span>
+            <button onClick={openCart} className={`relative w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all active:scale-95 group ${animateCart ? 'scale-110 bg-primary text-white shadow-lg shadow-primary/20' : ''}`}>
+              <span className="material-symbols-outlined text-xl">shopping_bag</span>
               {cartItemCount > 0 && (
-                <span className="absolute -top-1 -right-1 bg-secondary text-on-secondary text-[10px] min-w-[20px] h-5 px-1 rounded-full flex items-center justify-center font-black border-2 border-white shadow-sm">
+                <span className="absolute -top-1 -right-1 bg-secondary text-primary text-[10px] min-w-[20px] h-5 px-1 rounded-full flex items-center justify-center font-black border-2 border-white shadow-sm">
                   {cartItemCount}
                 </span>
               )}
             </button>
 
-            {/* Mobile Menu Toggle */}
+            {/* Tablet Menu Toggle (hidden on Desktop xl and hidden on Mobile md) */}
             <button 
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="xl:hidden w-9 h-9 md:w-10 md:h-10 rounded-full bg-stone-100 flex items-center justify-center text-stone-600 hover:bg-stone-200 hover:text-primary transition-colors ml-2 rtl:ml-0 rtl:mr-2"
+              className="xl:hidden w-10 h-10 rounded-full bg-stone-100 flex items-center justify-center text-stone-600 hover:bg-stone-200 hover:text-primary transition-colors ml-2 rtl:ml-0 rtl:mr-2"
             >
               <span className="material-symbols-outlined text-xl">{isMobileMenuOpen ? 'close' : 'menu'}</span>
             </button>
           </div>
+
 
         </div>
 
@@ -220,8 +221,8 @@ export default function Navbar({ dict, lang, settings }: { dict: any, lang: stri
           </div>
         </div>
 
-        {/* Mobile Dropdown Menu */}
-        <div className={`xl:hidden transition-all duration-300 ease-in-out overflow-hidden shadow-inner ${isMobileMenuOpen ? 'max-h-[400px] opacity-100 border-t border-stone-200/50' : 'max-h-0 opacity-0'}`}>
+        {/* Tablet Dropdown Menu (Hidden on Mobile and hidden on Desktop) */}
+        <div className={`hidden md:block xl:hidden transition-all duration-300 ease-in-out overflow-hidden shadow-inner ${isMobileMenuOpen ? 'max-h-[400px] opacity-100 border-t border-stone-200/50' : 'max-h-0 opacity-0'}`}>
           <div className="flex flex-col gap-2 p-4 bg-stone-50/50 rounded-b-3xl">
             <Link onClick={() => setIsMobileMenuOpen(false)} href={`/${lang}`} className={`px-4 py-3 rounded-xl font-bold flex items-center gap-3 ${rawPath === '/' ? 'bg-primary !text-white' : 'text-stone-700 hover:bg-stone-200'}`}>
               <span className="material-symbols-outlined text-xl">home</span> {dict.nav.home}
@@ -241,10 +242,6 @@ export default function Navbar({ dict, lang, settings }: { dict: any, lang: stri
             <Link onClick={() => setIsMobileMenuOpen(false)} href={`/${lang}/contact`} className={`px-4 py-3 rounded-xl font-bold flex items-center gap-3 ${rawPath === '/contact' ? 'bg-primary !text-white' : 'text-stone-700 hover:bg-stone-200'}`}>
               <span className="material-symbols-outlined text-xl">contact_support</span> {lang === 'ar' ? 'تواصل معنا' : 'Contact Us'}
             </Link>
-            {/* Mobile Switch Lang */}
-            <a href={getSwitchLang() + (rawPath === '/' ? '' : rawPath)} className="sm:hidden mt-2 px-4 py-3 rounded-xl font-bold border-2 border-stone-200 flex justify-center items-center text-stone-600 hover:bg-stone-100">
-              {lang === 'ar' ? 'Switch to English' : 'التبديل للعربية'}
-            </a>
           </div>
         </div>
       </nav>
