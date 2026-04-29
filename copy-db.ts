@@ -2,11 +2,11 @@
 import { PrismaClient } from '@prisma/client';
 
 const localPrisma = new PrismaClient({
-  datasources: { db: { url: 'postgresql://postgres:postgres@localhost:5432/nahlazetona_db?schema=public' } }
+  datasources: { db: { url: 'postgresql://postgres@localhost:5432/nahlazetona_db?schema=public' } }
 });
 
 const remotePrisma = new PrismaClient({
-  datasources: { db: { url: 'postgresql://neondb_owner:npg_fHtEMX5xlLo2@ep-blue-math-amdnusly-pooler.c-5.us-east-1.aws.neon.tech/neondb?sslmode=require' } }
+  datasources: { db: { url: 'postgresql://neondb_owner:npg_STAg58qLkIWv@ep-holy-mode-anulebkm.c-6.us-east-1.aws.neon.tech/neondb?sslmode=require' } }
 });
 
 async function main() {
